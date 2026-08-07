@@ -31,6 +31,8 @@ body{
 .nav{display:flex;gap:18px;align-items:center}
 .nav a{color:#333;text-decoration:none}
 .nav .cta{padding:8px 14px;border-radius:24px;background:var(--brand-blue);color:#fff}
+.nav-toggle{display:none;border:0;background:transparent;font-size:20px;cursor:pointer}
+.form-status{min-height:28px;margin-top:8px;font-weight:700}
 
 /* Hero */
 .hero{padding:60px 0;overflow:hidden}
@@ -102,4 +104,17 @@ section.in-view{opacity:1;transform:none}
   .package-grid{grid-template-columns:1fr}
   .contact-inner{grid-template-columns:1fr}
   .contact-title{font-size:40px}
+
+  /* Mobile header/nav */
+  .nav{display:none;position:absolute;right:18px;top:64px;background:rgba(255,255,255,0.98);border-radius:8px;padding:12px;flex-direction:column;box-shadow:0 8px 22px rgba(0,0,0,0.08)}
+  .nav a{display:block;padding:8px 12px}
+  .nav-toggle{display:block;background:transparent;border:0;font-size:20px}
+  .nav-open .nav{display:flex}
+
+  /* Make hero CTAs full width on small screens */
+  .hero-cta{flex-direction:column}
+  .hero-cta .button, .hero-cta .button-secondary{width:100%}
+
+  /* contact form adjustments */
+  .styled-form input, .styled-form select, .styled-form textarea{font-size:16px}
 }
