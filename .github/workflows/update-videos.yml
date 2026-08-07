@@ -17,12 +17,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install yt-dlp
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install --user yt-dlp jq
-          export PATH="$HOME/.local/bin:$PATH"
+        - name: Install yt-dlp and jq
+    run: |
+      sudo apt-get update
+      sudo apt-get install -y python3-pip jq
+      pip3 install --user yt-dlp
+      echo "PATH=$HOME/.local/bin:$PATH" >> $GITHUB_ENV
 
       - name: Fetch latest videos from YouTube channel
         env:
