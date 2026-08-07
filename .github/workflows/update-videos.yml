@@ -17,18 +17,17 @@ jobs:
         with:
           fetch-depth: 0
 
-        - name: Install yt-dlp and jq
-    run: |
-      sudo apt-get update
-      sudo apt-get install -y python3-pip jq
-      pip3 install --user yt-dlp
-      echo "PATH=$HOME/.local/bin:$PATH" >> $GITHUB_ENV
+      - name: Install yt-dlp and jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip jq
+          pip3 install --user yt-dlp
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Fetch latest videos from YouTube channel
         env:
           CHANNEL_URL: "https://www.youtube.com/@dreamtoabroad13918"
         run: |
-          export PATH="$HOME/.local/bin:$PATH"
           # get 10 latest video ids and titles
           yt-dlp --flat-playlist --dump-json "${CHANNEL_URL}" | jq -r '[.id, .title] | @tsv' | head -n 10 > /tmp/ytlist.txt || true
           echo '{"generated": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'", "videos": [' > /tmp/videos.json
