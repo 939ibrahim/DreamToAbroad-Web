@@ -28,29 +28,20 @@ jobs:
         env:
           CHANNEL_URL: "https://www.youtube.com/@dreamtoabroad13918"
         run: |
-          # get 10 latest video ids and titles
-          yt-dlp --flat-playlist --dump-json "${CHANNEL_URL}" | jq -r '[.id, .title] | @tsv' | head -n 10 > /tmp/ytlist.txt || true
+          yt-dlp --flat-playlist --dump-json "${CHANNEL_URL}" | jq -r '[.id, .title] | @tsv' | head -n 15 > /tmp/ytlist.txt || true
           echo '{"generated": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'", "videos": [' > /tmp/videos.json
           first=true
           while IFS=$'\t' read -r id title; do
             if [ "$first" = true ]; then first=false; else echo ',' >> /tmp/videos.json; fi
             thumb="https://i.ytimg.com/vi/${id}/hqdefault.jpg"
-            # escape quotes in title using python
-            esc_title=$(python3 - <<PY
-import json,sys
-s=sys.stdin.read().strip()
-print(json.dumps(s))
-PY
- <<EOF
-${title}
-EOF
-)
+          
             esc_title=${esc_title#\"}
             esc_title=${esc_title%\"}
             printf '{"id":"%s","title":"%s","thumb":"%s"}' "$id" "$esc_title" "$thumb" >> /tmp/videos.json
           done < /tmp/ytlist.txt
           echo ']}' >> /tmp/videos.json
           cat /tmp/videos.json
+          mkdir -p assets
           mv /tmp/videos.json assets/videos.json
 
       - name: Commit & push
