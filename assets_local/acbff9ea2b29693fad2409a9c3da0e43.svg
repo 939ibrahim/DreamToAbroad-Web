@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <defs>
+        <linearGradient x1="5.05050505%" y1="3.53535354%" x2="115.656566%" y2="124.747475%" id="linearGradient-1">
+            <stop stop-color="#595959" offset="0%"></stop>
+            <stop stop-color="#595959" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="81.8181818%" y1="-63.6363636%" x2="-13.6363636%" y2="74.2424242%" id="linearGradient-2">
+            <stop stop-color="#F8B6D0" offset="0%"></stop>
+            <stop stop-color="#FB8BD0" offset="28.125%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0" offset="75.0014%"></stop>
+        </linearGradient>
+        <linearGradient x1="15.7875%" y1="18.41875%" x2="79.16875%" y2="104.16875%" id="linearGradient-3">
+            <stop stop-color="#F53B86" offset="0%"></stop>
+            <stop stop-color="#6C45BF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.61290323%" y1="-1.61290323%" x2="37.0967742%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#F8B6D0" offset="0%"></stop>
+            <stop stop-color="#FB8BD0" offset="28.125%"></stop>
+            <stop stop-color="#DBB6F8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="15.7888889%" y1="18.4222222%" x2="79.1666667%" y2="104.166667%" id="linearGradient-5">
+            <stop stop-color="#F53B86" offset="0%"></stop>
+            <stop stop-color="#6C45BF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-2.94117647%" y1="-2.94117647%" x2="36.7647059%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#F8B6D0" offset="0%"></stop>
+            <stop stop-color="#FB8BD0" offset="28.125%"></stop>
+            <stop stop-color="#DBB6F8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="35.9300484%" y1="-0.826631976%" x2="48.7540815%" y2="119.494074%" id="linearGradient-7">
+            <stop stop-color="#FFD8E7" offset="0%"></stop>
+            <stop stop-color="#FE7FB6" offset="43.119%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0.31" offset="98.4375%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-151.000000, -147.000000)">
+            <g id="Group-6" transform="translate(151.000000, 147.000000)">
+                <path d="M0,18 C0,8.059 8.059,0 18,0 L82,0 C91.941,0 100,8.059 100,18 L100,82 C100,91.941 91.941,100 82,100 L18,100 C8.059,100 0,91.941 0,82 L0,18 Z" id="Path" fill="#141414" fill-rule="nonzero"></path>
+                <path d="M18,0.5 L82,0.5 C91.665,0.5 99.5,8.335 99.5,18 L99.5,82 C99.5,91.665 91.665,99.5 82,99.5 L18,99.5 C8.335,99.5 0.5,91.665 0.5,82 L0.5,18 C0.5,8.335 8.335,0.5 18,0.5 Z" id="Path" stroke="url(#linearGradient-1)"></path>
+                <circle id="Oval" stroke="url(#linearGradient-2)" cx="56" cy="41" r="16.5"></circle>
+                <g id="Group" transform="translate(48.000000, 35.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-3)" fill-rule="nonzero" cx="8" cy="8" r="8"></circle>
+                    <circle id="Oval" stroke="url(#linearGradient-4)" stroke-width="0.5" cx="8" cy="8" r="7.75"></circle>
+                </g>
+                <g id="Group" transform="translate(56.000000, 20.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-5)" fill-rule="nonzero" cx="4.5" cy="4.5" r="4.5"></circle>
+                    <circle id="Oval" stroke="url(#linearGradient-6)" stroke-width="0.5" cx="4.5" cy="4.5" r="4.25"></circle>
+                </g>
+                <path d="M32.5,44.5 C33.895,42.174 33.127,36.387 35.429,32.774 C35.717,32.32 36.329,32.261 36.75,32.595 C46.665,40.456 65.771,55.55 68.5,57.5 C68.5,59.5 64,64 62.5,65.5 C61.524,66.476 60.922,69.505 60.642,71.677 C60.539,72.477 60.001,73.162 59.234,73.41 L43.309,78.576 C42.662,78.785 42,78.304 42,77.624 L42,74 C42,73.448 41.552,73 41,73 L38.5,73 C35.186,73 32.5,70.314 32.5,67 L32.5,59.5 C32,58.5 27,59.5 27,58.5 C27,55.5 31,48.5 32.5,44.5 Z" id="Path" stroke="url(#linearGradient-7)" fill="#141414" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

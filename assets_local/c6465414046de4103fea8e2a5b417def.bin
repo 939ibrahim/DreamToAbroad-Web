@@ -1,0 +1,763 @@
+<!doctype html>
+<html class="l-html">
+  <head>
+    <meta charset="utf-8">
+    <title>Brandmark Logo Maker - the most advanced AI logo design tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <link rel="amphtml" href="https://brandmark.io/index.amp.html">
+  <meta name="title" content="Brandmark Logo Maker - the most advanced AI logo design tool">
+  <meta name="description" content="Create a unique logo, business card and social media graphics in less than a minute. Build your brand identity with our generative AI.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/project/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/project/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/project/favicon-16x16.png">
+<link rel="manifest" href="/favicons/project/site.webmanifest">
+<link rel="mask-icon" href="/favicons/project/safari-pinned-tab.svg" color="#FCD46A">
+<link rel="shortcut icon" href="/favicons/project/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-config" content="/favicons/project/browserconfig.xml">
+<meta name="theme-color" content="#FCD46A">
+
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+  <body class="l-body">
+    <div class="l-page" id="app">
+      
+
+  <aside class="bm-sidebar">
+  <div class="bm-sidebar-brand">
+    <!-- begin sidebar branding-->
+    <img class="bm-brand-logo" src="/images/logo.svg" width="160" alt="Brand Logo">
+    <!-- end sidebar branding-->
+    <div class="ml-auto">
+      <!-- sidebar close for mobile device-->
+      <a href="#" class="bm-close-sidebar"></a>
+    </div>
+  </div>
+  <div class="bm-sidebar-wrapper js-scrollbar">
+    <ul class="menu">
+      <li class="menu-item opened">
+        <a href="#" class="open-dropdown menu-link">
+          <span class="menu-label">
+            <span class="menu-name">Menu
+              <span class="menu-arrow"></span>
+            </span>
+          </span>
+          <span class="menu-icon rounded-circle">
+            <i class="icon-placeholder fe fe-more-horizontal"></i>
+          </span>
+        </a>
+        <!--submenu-->
+        <ul class="sub-menu" style="display: block">
+          <!--<li class="menu-item ">
+            <a href='/tools/' class=' menu-link'>
+              <span class="menu-label">
+                <span class="menu-name">Tools</span>
+              </span>
+              <span class="menu-icon rounded-circle">
+                <i class="icon-placeholder fe fe-box"></i>
+              </span>
+            </a>
+          </li>-->
+          <li class="menu-item ">
+            <a href='/pricing/' class=' menu-link'>
+              <span class="menu-label">
+                <span class="menu-name">Pricing</span>
+              </span>
+              <span class="menu-icon rounded-circle">
+                <i class="icon-placeholder fe fe-dollar-sign"></i>
+              </span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href='mailto:support@brandmark.io' class=' menu-link'>
+              <span class="menu-label">
+                <span class="menu-name">Support</span>
+              </span>
+              <span class="menu-icon rounded-circle">
+                <i class="icon-placeholder fe fe-mail"></i>
+              </span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href='https://chat.brandmark.io/account' class=' menu-link'>
+              <span class="menu-label">
+                <span class="menu-name">Login</span>
+              </span>
+              <span class="menu-icon rounded-circle">
+                <i class="icon-placeholder fe fe-log-in"></i>
+              </span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href='https://app.brandmark.io/v3/' class=' menu-link' style='opacity:0.5'>
+              <span class="menu-label">
+                <span class="menu-name">v3</span>
+              </span>
+              <span class="menu-icon rounded-circle">
+                <i class="icon-placeholder fe fe-box"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+
+  <div class="page">
+    <div class="page__box">
+      <!-- header block -->
+<header class="header  ">
+  <div class="header__box">
+
+      <h1 class="header__logo">
+        
+        <a href="/" class="header__logo-link">
+          <span class="header__logo-note header__logo-note--b">Brand</span>
+          <span class="header__logo-note header__logo-note--m">Mark</span>
+        </a>
+        
+      </h1>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <!--<li class="header__nav-item">
+            <a href="/tools/"
+               class="header__nav-link "
+            >Tools</a>
+          </li>-->
+          <li class="header__nav-item">
+            <a href="/pricing/" class="
+              header__nav-link
+              
+            ">Pricing</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="mailto:support@brandmark.io" class="header__nav-link">Support</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="https://chat.brandmark.io/account" class="header__nav-link highlight">Login</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="https://app.brandmark.io/v3/" class="header__nav-link" style="opacity:0.5">v3</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="header__mobile-menu sidebar-toggle" data-toggleclass="sidebar-open" data-target="body">
+        <svg class="ico-svg ico-svg__menu" >
+          <use xlink:href="/images/icons.svg#menu"></use>
+        </svg>
+      </a>
+
+  </div>
+</header>
+<!-- /End header block -->
+
+
+      <!-- hero block -->
+<section class="hero">
+  <div class="hero__box">
+    <div class="hero__box-main">
+
+      <div class="hero__logo">
+        <a href="#3" class="hero__logo-link">
+          <span class="hero__logo-note hero__logo-note--b">Brand</span>
+          <span class="hero__logo-note hero__logo-note--m">Mark</span>
+        </a>
+      </div>
+
+      <h2 class="hero__title">Create a unique, professional logo for your business</h2>
+      <div class="hero__note">
+      Kickstart your brand with business card designs, social media graphics, animations, websites and more
+      </div>
+
+      <div class="hero__action">
+		  <a class="hero__action-btn ui-btn ui-btn--size-normal ui-btn--theme-primary ui-btn--skin-normal" href="https://chat.brandmark.io/generate" target="_blank" tabindex="0"><span class="ui-btn__box" tabindex="-1">Create my logo</span></a>
+
+      <!--<a href="https://app.brandmark.io/v3/" id="btn-legacy" target="_blank">version 3</a>-->
+	  </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- /End hero block -->
+
+      <!-- slider block -->
+<div class="slider">
+
+  <div class="slider__list" data-simple-slider>
+
+
+    <div class="slider__item  slider__item--active">
+      <div class="slider__box">
+        <div class="slider__box-cover">
+          <img class="slider__box-cover-img slider__box-cover-img--s2" src="/images/slider/slide3.png"
+               srcset="/images/slider/slide3@2x.png 2x" alt="PubLaw Project brand design">
+        </div>
+        <div class="slider__box-review">
+          <div class="slider__box-review-box">
+            <div class="slider__box-review-quote">
+              I'm not a designer, when I had to make a logo I found myself staring at a blank screen. Brandmark made the process actually enjoyable
+              <svg class="ico-svg ico-svg__quote">
+                <use xlink:href="/images/icons.svg#quote"></use>
+              </svg>
+              <svg class="ico-svg ico-svg__quote-r">
+                <use xlink:href="/images/icons.svg#quote-r"></use>
+              </svg>
+            </div>
+
+            <div class="slider__box-user">
+              <div class="slider__box-user-in">
+                <img src="/images/userpic3.png" srcset="/images/userpic3@2x.png 2x" alt="Valentyna Kuzmych" class="slider__box-user-ico">
+                <div class="slider__box-user-info">
+                  <div class="slider__box-user-name">Valentyna Kuzmych</div>
+                  <div class="slider__box-user-position">CEO, PubLaw Project</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__box">
+        <div class="slider__box-cover">
+          <img class="slider__box-cover-img slider__box-cover-img--s3" src="/images/slider/slide2.png"
+               srcset="/images/slider/slide2@2x.png 2x" alt="NobleTide brand design">
+        </div>
+
+        <div class="slider__box-review">
+          <div class="slider__box-review-box">
+            <div class="slider__box-review-quote">
+              I tried other logo makers and Brandmark is the best value. Quality is exceptional and includes a complete branding solution for my company
+              <svg class="ico-svg ico-svg__quote">
+                <use xlink:href="/images/icons.svg#quote"></use>
+              </svg>
+              <svg class="ico-svg ico-svg__quote-r">
+                <use xlink:href="/images/icons.svg#quote-r"></use>
+              </svg>
+            </div>
+
+            <div class="slider__box-user">
+              <div class="slider__box-user-in">
+                <img src="/images/userpic2.png" srcset="/images/userpic2@2x.png 2x" alt="Courtney Costrino" class="slider__box-user-ico">
+                <div class="slider__box-user-info">
+                  <div class="slider__box-user-name">Courtney Costrino</div>
+                  <div class="slider__box-user-position">Founder, Noble Tide LLC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__box">
+        <div class="slider__box-cover">
+          <img class="slider__box-cover-img slider__box-cover-img--s1" src="/images/slider/slide1.png"
+               srcset="/images/slider/slide1@2x.png 2x" alt="Hwear brand design">
+        </div>
+        <div class="slider__box-review">
+          <div class="slider__box-review-box">
+
+            <div class="slider__box-review-quote">
+              I was afraid to pay thousands for a logo that didn't turn out right for my business. The Brandmark team helped me create a logo that I love!
+              <svg class="ico-svg ico-svg__quote">
+                <use xlink:href="/images/icons.svg#quote"></use>
+              </svg>
+              <svg class="ico-svg ico-svg__quote-r">
+                <use xlink:href="/images/icons.svg#quote-r"></use>
+              </svg>
+            </div>
+
+            <div class="slider__box-user">
+              <div class="slider__box-user-in">
+                <img src="/images/userpic1.png" srcset="/images/userpic1@2x.png 2x" alt="Sarah Locatelli" class="slider__box-user-ico">
+                <div class="slider__box-user-info">
+                  <div class="slider__box-user-name">Sarah Locatelli</div>
+                  <div class="slider__box-user-position">Founder, Loctia</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider__page">
+    <div class="slider__page-item slider__page-item--active" data-index="0"></div>
+    <div class="slider__page-item" data-index="1"></div>
+    <div class="slider__page-item" data-index="2"></div>
+  </div>
+</div>
+<!-- /End slider block -->
+
+      <!-- logos block -->
+<div class="logos">
+  <div class="logos__box">
+    <ul class="logos__list">
+      <li class="logos__item">
+        <img src="/images/logos/l1-2x.png" style="width: 7.063em" alt="img" class="logos__img">
+      </li>
+      <li class="logos__item">
+        <img src="/images/logos/l2-2x.png"  style="width: 4.625em" alt="img" class="logos__img">
+      </li>
+      <li class="logos__item">
+        <img src="/images/logos/l3-2x.png" style="width: 4.875em" alt="img" class="logos__img">
+      </li>
+      <li class="logos__item">
+        <img src="/images/logos/l4-2x.png" style="width: 7.563em" alt="img" class="logos__img">
+      </li>
+      <li class="logos__item">
+        <img src="/images/logos/l5-2x.png" style="width: 9.063em" alt="img" class="logos__img">
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- /End logos block -->
+
+      <!-- build block -->
+<div class="build">
+  <div class="build__box">
+    <div class="build__box-row">
+      <div class="build__cover">
+        <img src="/images/i1.jpg" srcset="/images/i1@2x.jpg 2x" class="build__cover-img" alt="img">
+        <div class="build__cover-decor">
+          <svg class="ico-svg ico-svg--planet">
+              <use xlink:href="/images/icons.svg#planet"></use>
+          </svg>
+        </div>
+        <div class="build__cover-decor2"></div>
+      </div>
+      <div class="build__main">
+
+        <div class="build__main-title">
+          Build a beautiful brand on time and on budget
+        </div>
+
+        <div class="build__main-note">
+          Kickstart your business with thousands of <b>ready-to-use</b> design assets.
+        </div>
+
+        <div class="build__main-list">
+
+          <div class="build__main-list-item">
+            <svg class="ico-svg ico-svg__doc">
+                <use xlink:href="/images/icons.svg#doc"></use>
+            </svg>
+            <div class="build__main-list-item-note">Logo source files</div>
+          </div>
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__guide">
+                  <use xlink:href="/images/icons.svg#guide"></use>
+              </svg>
+              <div class="build__main-list-item-note">Brand guide</div>
+            </div>
+          </div>
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__profile">
+                  <use xlink:href="/images/icons.svg#web"></use>
+              </svg>
+              <div class="build__main-list-item-note">One-page websites</div>
+            </div>
+          </div>
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__profile">
+                  <use xlink:href="/images/icons.svg#profile"></use>
+              </svg>
+              <div class="build__main-list-item-note">Social profile icons</div>
+            </div>
+          </div>
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__card">
+                  <use xlink:href="/images/icons.svg#card"></use>
+              </svg>
+              <div class="build__main-list-item-note">Business card designs</div>
+            </div>
+          </div>
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__favicon">
+                  <use xlink:href="/images/icons.svg#favicon"></use>
+              </svg>
+              <div class="build__main-list-item-note">Animated designs</div>
+            </div>
+          </div>
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__paper">
+                  <use xlink:href="/images/icons.svg#paper"></use>
+              </svg>
+              <div class="build__main-list-item-note">Invoice templates</div>
+            </div>
+          </div>
+
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__logo">
+                  <use xlink:href="/images/icons.svg#logo"></use>
+              </svg>
+              <div class="build__main-list-item-note">Mockup designs</div>
+            </div>
+          </div>
+
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__cover">
+                  <use xlink:href="/images/icons.svg#cover"></use>
+              </svg>
+              <div class="build__main-list-item-note">Social media designs</div>
+            </div>
+          </div>
+          <div class="build__main-list-item">
+            <div class="build__main-list-item-ico">
+              <svg class="ico-svg ico-svg__presentation">
+                  <use xlink:href="/images/icons.svg#presentation"></use>
+              </svg>
+              <div class="build__main-list-item-note">Presentation templates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="build__main-action">
+          <a href="https://chat.brandmark.io/brandkit/demo" target="_blank" class="build__main-action-btn ui-btn ui-btn--size-normal ui-btn--theme-light">
+            <span class="ui-btn__box" tabindex="-1">
+              <svg class="ico-svg ico-svg--out">
+                <use xlink:href="/images/icons.svg#out"></use>
+              </svg>
+              See example assets
+            </span>
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- /End build block -->
+
+      <!-- chat block -->
+<div class="chat">
+  <div class="chat__box">
+
+    <div class="chat__box-line">
+      <!--<div class="chat__main-background"></div>-->
+      <div class="chat__main">
+        <div class="chat__main-title">Gen AI + Human inspiration</div>
+        <div class="chat__main-note">Use our exclusive hand-crafted fonts &amp; templates or create a unique icon with Generative AI</div>
+      </div>
+
+      <div class="chat__screenshot">
+        <img src="/images/font-select.png" alt="font select" width="376" height="275" class="chat__screenshot-image" />
+      </div>
+      <!--<div class="chat__phone">-->
+
+          <!--<div class="chat__list-item chat__list-item--s1">
+          </div>-->
+          
+          <!--<div class="chat__list-item chat__list-item--s1">
+            <img src="/images/userpic1.png" srcset="/images/userpic4@2x.png 2x" alt="customer" class="chat__list-item-userpic">
+            <div class="chat__list-item-note">
+              Can you put the icon on a hexagonal container, change the text to green, and also remove the tagline
+            </div>
+          </div>
+
+          <div class="chat__list-item chat__list-item--s2">
+            <img src="/images/userpic5.png" srcset="/images/userpic5@2x.png 2x" alt="Jack" class="chat__list-item-userpic">
+            <div class="chat__list-item-note">
+              <div class="chat__list-item-extra">
+                <img src="/images/logos2/la.png" srcset="/images/logos2/la@2x.png 2x" alt="Monkspace" class="chat__list-item-extra-img">
+                <div class="chat__list-item-txt">
+                  Sure thing, how does this look?
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+        <!--</div>-->
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- /End chat block -->
+
+
+      <!-- instantly block -->
+<div class="instantly">
+  <div class="instantly__box">
+    <div class="instantly__main">
+      <div class="instantly__title">Instantly customize and export</div>
+      <div class="instantly__note">Right in your browser, no designer or software needed</div>
+    </div>
+    <div class="instantly__preview">
+      <div class="instantly__preview-box">
+        <svg width="1800" viewBox="0 0 1800 1030" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" class="instantly__preview-img">
+          <image href="/images/editor.png" width="1800" height="1030"/>
+          
+          <!-- Blinking cursor -->
+          <rect x="1430" y="100" width="5" height="100" fill="#5363e1" class="cursor">
+            <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+          </rect>
+        </svg>
+        <img src="/images/editor_controls_inverse.png"  alt="Brandmark.io editor controls" class="instantly__preview-controls-inverse">
+        <img src="/images/editor_controls.png"  alt="Brandmark.io editor controls" class="instantly__preview-controls">
+
+      </div>
+      <div class="instantly__preview-note">
+        <div class="instantly__preview-info instantly__preview-info--s1">
+          <div class="instantly__preview-title">Export to all major formats</div>
+          <div class="instantly__preview-text">Publish online or export to SVG, PNG and PDF</div>
+        </div>
+        <div class="instantly__preview-info instantly__preview-info--s2">
+          <div class="instantly__preview-title">Edit and customize</div>
+          <div class="instantly__preview-text">Tap or click to edit text</div>
+        </div>
+
+        <div class="instantly__preview-info instantly__preview-info--s3">
+          <div class="instantly__preview-title">Mobile &amp; Desktop</div>
+          <div class="instantly__preview-text">Use on your mobile device</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /End instantly block -->
+
+      <!-- creations block -->
+<section class="creations">
+
+  <div class="creations__box">
+
+
+    <div class="creations__list">
+
+
+      <div class="creations__item creations__item--info">
+        <div class="creations__main">
+          <div class="creations__main-title">Latest customer creations</div>
+          <div class="creations__main-note">See why millions of users have created a logo with Brandmark.io</div>
+        </div>
+      </div>
+
+
+      <div class="creations__item creations__item--s1">
+        <img class="creations__item-img" src="/images/logos2/i0.svg"  alt="CIELA MONTESSORI">
+      </div>
+
+      <div class="creations__item creations__item--s2">
+        <img class="creations__item-img" src="/images/i2.jpg" srcset="/images/i2@2x.jpg 2x" alt="No BS">
+      </div>
+
+      <div class="creations__item creations__item--s3">
+        <img class="creations__item-img" src="/images/logos2/i1.svg" alt="The Local Know">
+      </div>
+
+      <div class="creations__item creations__item--s4">
+        <img class="creations__item-img" src="/images/logos2/i2.svg"  alt="YOUTUI">
+      </div>
+
+      <div class="creations__item creations__item--s5">
+        <img class="creations__item-img" src="/images/logos2/i3.svg"  alt="Monkspace">
+      </div>
+
+      <div class="creations__item creations__item--s6">
+        <img class="creations__item-img" src="/images/logos2/i4.svg"  alt="COCO">
+      </div>
+
+      <div class="creations__item creations__item--s7">
+        <img class="creations__item-img" src="/images/logos2/i5.svg"  alt="funfit">
+      </div>
+
+      <div class="creations__item creations__item--s8">
+        <img class="creations__item-img" src="/images/logos2/i6.svg"  alt="GOOMOE">
+      </div>
+
+      <div class="creations__item creations__item--s9">
+        <img class="creations__item-img" src="/images/logos2/i7.svg" alt="Wooly Waif">
+      </div>
+
+      <div class="creations__item creations__item--s10">
+        <img class="creations__item-img" src="/images/logos2/i8.svg" alt="PathBase">
+      </div>
+
+      <div class="creations__item creations__item--s11">
+        <img class="creations__item-img" src="/images/logos2/i9.svg" alt="BENSON">
+      </div>
+      <div class="creations__item creations__item--s12">
+        <img class="creations__item-img" src="/images/logos2/i10.svg" alt="Lizzty">
+      </div>
+      <div class="creations__item creations__item--s13">
+        <img class="creations__item-img" src="/images/logos2/i12.svg" alt="lighten">
+      </div>
+      <div class="creations__item creations__item--s14"></div>
+      <div class="creations__item creations__item--s15">
+        <img class="creations__item-img" src="/images/logos2/i11.svg" alt="COLONETICS">
+      </div>
+      <div class="creations__item creations__item--s16"></div>
+
+    </div>
+  </div>
+
+</section>
+<!-- /End creations block -->
+
+      <!-- features block -->
+<div class="features">
+  <div class="features__box">
+
+    <div class="features__list">
+
+      <div class="features__item features__item--s1">
+        <div class="features__item-cover">
+          <svg class="ico-svg ico-svg__s1 features__item-ico">
+              <use xlink:href="/images/icons.svg#s1"></use>
+          </svg>
+        </div>
+        <div class="features__item-box">
+          <div class="features__item-title">No more designer anxiety</div>
+          <div class="features__item-note">Get your logo instantly, not in weeks.</div>
+        </div>
+      </div>
+
+      <div class="features__item features__item--s2">
+        <div class="features__item-cover">
+          <svg class="ico-svg ico-svg__s2 features__item-ico">
+              <use xlink:href="/images/icons.svg#s2"></use>
+          </svg>
+        </div>
+        <div class="features__item-box">
+          <div class="features__item-title">Need a tweak to your design?</div>
+          <div class="features__item-note">We’ll do it for you, absolutely free</div>
+        </div>
+      </div>
+
+      <div class="features__item features__item--s3">
+        <div class="features__item-cover">
+          <svg class="ico-svg ico-svg__s3 features__item-ico">
+              <use xlink:href="/images/icons.svg#s3"></use>
+          </svg>
+        </div>
+        <div class="features__item-box">
+          <div class="features__item-title">No monthly charges</div>
+          <div class="features__item-note">Pay once, get access to our branding tools forever.</div>
+        </div>
+      </div>
+
+
+      <div class="features__item features__item--s4">
+        <div class="features__item-cover">
+          <svg class="ico-svg ico-svg__s4 features__item-ico">
+              <use xlink:href="/images/icons.svg#s4"></use>
+          </svg>
+        </div>
+        <div class="features__item-box">
+          <div class="features__item-title">Full copyright included</div>
+          <div class="features__item-note">For use in commercial and personal projects</div>
+        </div>
+      </div>
+
+      <div class="features__item features__item--s5">
+        <div class="features__item-cover">
+          <svg class="ico-svg ico-svg__s5 features__item-ico">
+              <use xlink:href="/images/icons.svg#s5"></use>
+          </svg>
+        </div>
+        <div class="features__item-box">
+          <div class="features__item-title">Unlimited revisions</div>
+          <div class="features__item-note">Modify your logo at any time, even after purchase</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="features__action">
+      <div class="features__action-title">Create your unique logo design</div>
+      <div class="features__action-note">generate unlimited logos for free</div>
+
+      <a class="features__action-btn ui-btn ui-btn--size-normal ui-btn--theme-normal ui-btn--skin-normal" href="https://chat.brandmark.io/generate" target="_blank" tabindex="0"><span class="ui-btn__box" tabindex="-1">Create my logo</span></a>
+    </div>
+
+  </div>
+</div>
+<!-- /End features block -->
+
+
+
+      <!-- footer block -->
+<footer class="footer">
+  <div class="footer__box">
+    <div class="footer__row">
+      <div class="footer__section">
+        <a href="https://chat.brandmark.io" target="_blank" class="footer__section-title footer__section-title--style1">Create your logo</a>
+        <div class="footer__section-note">Try Brandmark for free, no account needed</div>
+      </div>
+      
+      <div class="footer__section">
+        <a href="mailto:support@brandmark.io"  class="footer__section-title footer__section-title--style3">Support</a>
+        <div class="footer__section-note">Have questions or need help? Start here.</div>
+      </div>
+      <div class="footer__section">
+        <a href="/tools/" class="footer__section-title footer__section-title--style2">Tools</a>
+        <div class="footer__section-note">Check out our free tools for color, font and logo design</div>
+      </div>
+
+      <div class="footer__section">
+        <a href="/terms.html" target="_blank" class="footer__section-title" style="color: #64748b; margin-right: 3em">Terms of Service</a>
+      </div>
+
+      <div class="footer__section">
+        <a href="/privacy.html" target="_blank" class="footer__section-title" style="color: #64748b">Privacy policy</a>
+      </div>
+      
+
+    </div>
+
+    <div class="footer__decor">
+      <div class="footer__decor-item footer__decor-item--s1"></div>
+      <div class="footer__decor-item footer__decor-item--s2"></div>
+    </div>
+  </div>
+</footer>
+<!-- /End footer block -->
+
+    </div>
+  </div>
+
+
+    </div>
+    
+    <script src="/javascripts/app.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-52772108-9', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
+

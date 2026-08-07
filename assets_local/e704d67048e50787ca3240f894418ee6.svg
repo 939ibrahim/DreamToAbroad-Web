@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 30</title>
+    <defs>
+        <linearGradient x1="5.05051515%" y1="3.53535354%" x2="115.656566%" y2="124.747475%" id="linearGradient-1">
+            <stop stop-color="#595959" offset="0%"></stop>
+            <stop stop-color="#595959" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.69230769%" y1="0%" x2="65.3846154%" y2="95.1923077%" id="linearGradient-2">
+            <stop stop-color="#FF83B4" offset="0%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.28205128%" y1="-1.28205128%" x2="101.282051%" y2="120.175385%" id="linearGradient-3">
+            <stop stop-color="#F8B6D0" offset="0%"></stop>
+            <stop stop-color="#FB8BD0" offset="28.125%"></stop>
+            <stop stop-color="#DBB6F8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="59.1857005%" y1="112.059219%" x2="5.38302154%" y2="29.9390647%" id="linearGradient-4">
+            <stop stop-color="#5746C8" offset="0%"></stop>
+            <stop stop-color="#F63B85" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.1778457%" y1="-11.595482%" x2="61.9357187%" y2="87.4353853%" id="linearGradient-5">
+            <stop stop-color="#F8B6D0" offset="5.67377%"></stop>
+            <stop stop-color="#FE7FB6" stop-opacity="0.63" offset="39.8191%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-7.61904762%" y1="70.4761905%" x2="90%" y2="10.952381%" id="linearGradient-6">
+            <stop stop-color="#FFA4C8" offset="0%"></stop>
+            <stop stop-color="#FE7FB6" offset="60.9375%"></stop>
+            <stop stop-color="#DBB6F8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="15.789%" y1="18.421%" x2="79.167%" y2="104.167%" id="linearGradient-7">
+            <stop stop-color="#F53B86" offset="0%"></stop>
+            <stop stop-color="#6C45BF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-2.63157895%" y1="-2.63157895%" x2="36.8421053%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#F8B6D0" offset="0%"></stop>
+            <stop stop-color="#FB8BD0" offset="28.125%"></stop>
+            <stop stop-color="#DBB6F8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-30">
+            <rect id="Rectangle" fill="#141414" fill-rule="nonzero" x="0" y="0" width="100" height="100" rx="18"></rect>
+            <rect id="Rectangle" stroke="url(#linearGradient-1)" x="0.5" y="0.5" width="99" height="99" rx="17.5"></rect>
+            <circle id="Oval" stroke="url(#linearGradient-2)" cx="49" cy="49" r="26"></circle>
+            <circle id="Oval" stroke="url(#linearGradient-3)" cx="49" cy="49" r="19.5"></circle>
+            <g id="Group" transform="translate(59.549514, 20.713643)">
+                <path d="M7.62038621,0.293656817 C8.17718621,-0.263143183 9.12928621,0.0121568169 9.30288621,0.780256817 L10.5599862,6.34215682 C10.6449862,6.71835682 10.9387862,7.01215682 11.3148862,7.09715682 L16.8767862,8.35425682 C17.6448862,8.52785682 17.9202862,9.47985682 17.3634862,10.0367568 L10.0359862,17.3641568 C9.84078621,17.5594568 9.57348621,17.6652568 9.29748621,17.6565568 L1.22268621,17.4024568 C0.694986213,17.3858568 0.271186213,16.9620568 0.254586213,16.4344568 L0.000486213469,8.35965682 C-0.00811378653,8.08365682 0.0976862135,7.81635682 0.292886213,7.62105682 L7.62038621,0.293656817 Z" id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>
+                <path d="M7.79718621,0.470456817 C8.21478621,0.0527568169 8.92878621,0.259356817 9.05898621,0.835356817 L10.3160862,6.39725682 C10.4223862,6.86755682 10.7895862,7.23465682 11.2597862,7.34095682 L16.8216862,8.59805682 C17.3977862,8.72825682 17.6042862,9.44235682 17.1866862,9.85995682 L9.85918621,17.1873568 C9.71278621,17.3338568 9.51228621,17.4131568 9.30528621,17.4066568 L1.23048621,17.1526568 C0.834786213,17.1401568 0.516886213,16.8222568 0.504486213,16.4265568 L0.250386213,8.35175682 L0.000486213469,8.35965682 L0.250386213,8.35175682 C0.243886213,8.14475682 0.323286213,7.94425682 0.469686213,7.79785682 L7.79718621,0.470456817 Z" id="Path" stroke="url(#linearGradient-5)" stroke-width="0.5"></path>
+            </g>
+            <line x1="49.1" y1="48.7" x2="70.1" y2="27.7" id="Path" stroke="url(#linearGradient-6)" stroke-linecap="round"></line>
+            <g id="Group" transform="translate(44.000000, 44.000000)">
+                <circle id="Oval" fill="url(#linearGradient-7)" fill-rule="nonzero" cx="5" cy="5" r="5"></circle>
+                <circle id="Oval" stroke="url(#linearGradient-8)" stroke-width="0.5" cx="5" cy="5" r="4.75"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 24</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="80.5761%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="27.0833%"></stop>
+            <stop stop-color="#F2EBF3" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="5.05050505%" y1="3.53535354%" x2="116.161616%" y2="127.272727%" id="linearGradient-2">
+            <stop stop-color="#F2CBFD" offset="0%"></stop>
+            <stop stop-color="#EEEBFF" stop-opacity="0.93" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="30.952381%" y1="-18.359375%" x2="41.3020654%" y2="117.434247%" id="linearGradient-3">
+            <stop stop-color="#FF74AB" offset="0%"></stop>
+            <stop stop-color="#FE48B8" offset="26.5625%"></stop>
+            <stop stop-color="#D29CFD" offset="80.2083%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-20.7791667%" y1="49.2784288%" x2="100%" y2="50.265842%" id="linearGradient-4">
+            <stop stop-color="#B557FF" offset="0%"></stop>
+            <stop stop-color="#D45AFF" offset="22.9167%"></stop>
+            <stop stop-color="#BCA4FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.0529101%" y1="0%" x2="100%" y2="126.984127%" id="linearGradient-5">
+            <stop stop-color="#F63B85" offset="0%"></stop>
+            <stop stop-color="#5746C8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-20.923913%" y1="-1.35869565%" x2="71.4673913%" y2="101.902174%" id="linearGradient-6">
+            <stop stop-color="#FF9DC4" offset="0%"></stop>
+            <stop stop-color="#F0DDFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-24">
+            <rect id="Rectangle" fill="url(#radialGradient-1)" fill-rule="nonzero" x="0" y="0" width="100" height="100" rx="18"></rect>
+            <rect id="Rectangle" stroke="url(#linearGradient-2)" x="0.5" y="0.5" width="99" height="99" rx="17.5"></rect>
+            <path d="M32,33 L68,33 C69.6568542,33 71,34.3431458 71,36 L71,65 C71,66.6568542 69.6568542,68 68,68 L32,68 C30.3431458,68 29,66.6568542 29,65 L29,36 C29,34.3431458 30.3431458,33 32,33 Z" id="Rectangle" stroke="url(#linearGradient-3)"></path>
+            <path d="M72.25,69 L27.75,69 C26.784,69 26,68.216 26,67.25 C26,66.284 26.784,65.5 27.75,65.5 L72.25,65.5 C73.216,65.5 74,66.284 74,67.25 C74,68.216 73.216,69 72.25,69 Z" id="Path" stroke="url(#linearGradient-4)" fill="#FFFFFF" stroke-linecap="round"></path>
+            <g id="Group" transform="translate(40.500000, 40.000000)">
+                <circle id="Oval" fill="url(#linearGradient-5)" fill-rule="nonzero" cx="9.45" cy="9.45" r="9.45"></circle>
+                <circle id="Oval" stroke="url(#linearGradient-6)" stroke-width="0.5" cx="9.45" cy="9.45" r="9.2"></circle>
+            </g>
+            <path d="M46.8,48.877 C47.503,49.535 48.726,50.678 49.318,51.231 C49.51,51.411 49.808,51.41 50,51.231 L54.15,47.35" id="Path" stroke="#FFFFFF" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

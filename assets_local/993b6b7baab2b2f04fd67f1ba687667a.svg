@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <linearGradient x1="5.05050505%" y1="3.53535354%" x2="115.656566%" y2="124.747475%" id="linearGradient-1">
+            <stop stop-color="#595959" offset="0%"></stop>
+            <stop stop-color="#595959" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.1122449%" y1="1.45%" x2="57.1540816%" y2="119.775%" id="linearGradient-2">
+            <stop stop-color="#FFA4EB" offset="0%"></stop>
+            <stop stop-color="#FE7FE2" stop-opacity="0.75" offset="38.5417%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.3333333%" y1="0.522222222%" x2="48.537037%" y2="126.222222%" id="linearGradient-3">
+            <stop stop-color="#C1A4FF" offset="0%"></stop>
+            <stop stop-color="#BF7FFE" stop-opacity="0.75" offset="38.5417%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="48.8715278%" y1="25.925%" x2="59.5017361%" y2="94.5916667%" id="linearGradient-4">
+            <stop stop-color="#F63BDD" offset="0%"></stop>
+            <stop stop-color="#5746C8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.2095971%" y1="-6.73617021%" x2="45.735627%" y2="77.2851064%" id="linearGradient-5">
+            <stop stop-color="#FFA4C8" offset="0%"></stop>
+            <stop stop-color="#5C7ED6" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="71.9381443%" y1="40.2562653%" x2="0%" y2="60.2192907%" id="linearGradient-6">
+            <stop stop-color="#F85C9A" offset="0%"></stop>
+            <stop stop-color="#FF9BC6" offset="41.1458%"></stop>
+            <stop stop-color="#141414" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="15.78%" y1="18.42%" x2="79.16%" y2="104.16%" id="linearGradient-7">
+            <stop stop-color="#F53B86" offset="0%"></stop>
+            <stop stop-color="#6C45BF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-5.55555556%" y1="-5.55555556%" x2="36.1111111%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#F8B6D0" offset="0%"></stop>
+            <stop stop-color="#FB8BD0" offset="28.125%"></stop>
+            <stop stop-color="#DBB6F8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-295.000000, -147.000000)">
+            <g id="Group-7" transform="translate(295.000000, 147.000000)">
+                <path d="M0,18 C0,8.059 8.059,0 18,0 L82,0 C91.941,0 100,8.059 100,18 L100,82 C100,91.941 91.941,100 82,100 L18,100 C8.059,100 0,91.941 0,82 L0,18 Z" id="Path" fill="#141414" fill-rule="nonzero"></path>
+                <path d="M18,0.5 L82,0.5 C91.665,0.5 99.5,8.335 99.5,18 L99.5,82 C99.5,91.665 91.665,99.5 82,99.5 L18,99.5 C8.335,99.5 0.5,91.665 0.5,82 L0.5,18 C0.5,8.335 8.335,0.5 18,0.5 Z" id="Path" stroke="url(#linearGradient-1)"></path>
+                <rect id="Rectangle" stroke="url(#linearGradient-2)" x="64.5" y="46.5" width="12" height="28" rx="2.5"></rect>
+                <rect id="Rectangle" stroke="url(#linearGradient-3)" x="22.5" y="56.5" width="12" height="18" rx="2.5"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-4)" fill-rule="nonzero" x="43" y="51" width="13" height="24" rx="3"></rect>
+                <rect id="Rectangle" stroke="url(#linearGradient-5)" stroke-width="0.5" x="43.25" y="51.25" width="12.5" height="23.5" rx="2.75"></rect>
+                <path d="M22.5,46.5 C26.5,46 28.315,39.562 34.5,37.5 C40.5,35.5 43.5,39.5 49.5,39.5 C58,39.5 61,28 71,27.5" id="Path" stroke="url(#linearGradient-6)"></path>
+                <g id="Group" transform="translate(68.000000, 25.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-7)" fill-rule="nonzero" cx="2.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval" stroke="url(#linearGradient-8)" stroke-width="0.5" cx="2.5" cy="2.5" r="2.25"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

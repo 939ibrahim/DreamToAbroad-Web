@@ -1,0 +1,860 @@
+<!DOCTYPE html><!-- Last Published: Wed Jul 08 2026 12:00:30 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.outcrowd.io" data-wf-page="667a7576e7e7ef3ba89b3f6b" data-wf-site="667a7576e7e7ef3ba89b3f2a" lang="en" data-wf-collection="667a7576e7e7ef3ba89b3f40" data-wf-item-slug="ai-ux-guide-how-to-design-ai-features-users-can-trust"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>AI UX Guide: How to Design AI Features Users Can Trust</title><meta content="" name="description"/><meta content="AI UX Guide: How to Design AI Features Users Can Trust" property="og:title"/><meta content="" property="og:description"/><meta content="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226defa135dfff6dca00f8_3547.webp" property="og:image"/><meta content="AI UX Guide: How to Design AI Features Users Can Trust" name="twitter:title"/><meta content="" name="twitter:description"/><meta content="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226defa135dfff6dca00f8_3547.webp" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/css/outcrowd-2-0-new-superfinal.webflow.shared.586b00c50.min.css" rel="stylesheet" type="text/css" integrity="sha384-WGsAxQqs4dRI2LjLaIoHE3A35cN0sVEm9by6wOmjH8hnLt9dEBNopK1FfRjNwqea" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Lora:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66c8868efa543e643672fbac_favicon-logo.webp" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66c88694a996450fa3340232_webclip-logo.webp" rel="apple-touch-icon"/><link href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html" rel="canonical"/><script src="https://t.contentsquare.net/uxa/b4bc87ad96f6d.js"></script>
+
+<!-- LuckyOrange -->
+<script async defer src="https://www.outcrowd.io/blog/%E2%80%9Chttps://tools.luckyorange.com/core/lo.js?site-id=beedb5f1%E2%80%9D"></script>
+<!-- End LuckyOrange -->
+
+<!-- Finsweet Cookie Consent -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in"></script>
+
+<!-- Google Tag Manager -->
+<script type="fs-cc" fs-cc-categories="personalization, analytics, marketing">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSVN3H9T');
+</script>
+<!-- End Google Tag Manager -->
+
+<style>
+  /* Scroll */
+  ::-webkit-scrollbar { width: 0px; }
+  ::-webkit-scrollbar-thumb { background: #ccc;}
+  ::-webkit-scrollbar-track { background: #fff;}   
+
+
+  html.lenis {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+</style>
+
+<!-- Zoho Marketing Automation -->
+<script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops("3z8d4b91e160eba7c4b33c1452b09237f5","3z6f0185ca0cf5064c89f195b63d58dd13","3zcfe9936e41b7debbc8a2e7bbf332b2d8cd409973d73feb32528c9f7a09975655","3z646c8ab2f141264e6fef4fb1f01a34eb","0.0");}catch(e){}}};}else {s.onload = function(){try{loadwaprops("3z8d4b91e160eba7c4b33c1452b09237f5","3z6f0185ca0cf5064c89f195b63d58dd13","3zcfe9936e41b7debbc8a2e7bbf332b2d8cd409973d73feb32528c9f7a09975655","3z646c8ab2f141264e6fef4fb1f01a34eb","0.0");}catch(e){}};};s.src =p+"//ma.zoho.eu/hub/js/WebsiteAutomation.js";f.parentNode.insertBefore(s, f);</script>
+<!-- End Zoho Marketing Automation -->
+
+<!-- Zoho PageSense -->
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siq356ac5ee2ae62f560ca1f8898d9b98b0c3aff35c31cf02e25a4358406e52a64c", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.eu/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+<script type="text/javascript">(function(w,s){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://cdn-eu.pagesense.io/js/outcrowd/5d6f7ea2b19c45c08ba9fe8553b86b71.js";var x=document.getElementsByTagName("script")[0];x.parentNode.insertBefore(e,x);})(window,"script");</script>
+<!-- End Zoho PageSense --><style>
+  .text-field {
+    outline: none; 
+  }
+
+  .text-field:focus {
+    border: 1px solid var(--New-Color-Violet, #774DFF);
+    color: #080808;
+  }
+
+  .text-field:focus:not(:placeholder-shown) {
+    border: 1px solid var(--New-Color-Violet, #774DFF);
+    color: #080808;
+    caret-color: #774DFF; 
+  }
+
+  .text-field:not(:placeholder-shown) {
+    border: 1px solid #F5F5F5;
+    color: #080808;
+  }
+
+  figcaption a,
+  figcaption em,
+  figcaption strong {
+    font-family: "Itcav Bk", sans-serif;
+    color: #737373 !important;
+    text-decoration: underline;
+    font-style: normal;
+    font-size: 1.1rem;
+  }
+</style></head><body><div class="page-wrapper"><header data-w-id="8b251f90-ecf6-2712-000f-63a6e0b37b66" class="header-new"><div class="header-wrapper"><nav class="nav-new"><a internal-link="" href="../index.html" class="logo-nav w-inline-block"><div data-w-id="1f1db639-7034-cf0f-006c-9f8dedd8dfa7" data-is-ix2-target="1" class="logo-white" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66bdefa0a9bf14b3cb560686_logo%20white.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2" data-duration="0" data-loading="eager"></div><div data-w-id="335a1b7a-c392-2315-8be8-c943ebafd459" data-is-ix2-target="1" class="logo-black" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66bdf91fdd174c6bcc01dcce_logo%20dark.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-duration="0" data-loading="eager"></div></a><div class="nav-link-wrap nav-menu"><a internal-link="" href="../cases.html" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">Cases</div><div class="footer-nav-link hover">Cases</div></div></a><a internal-link="" href="../services.html" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">Service</div><div class="footer-nav-link hover">Service</div></div></a><a internal-link="" href="../blog.html" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">Blog</div><div class="footer-nav-link hover">Blog</div></div></a><a internal-link="" href="../about-us.html" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">About us</div><div class="footer-nav-link hover">About us</div></div></a></div><div class="header-btn-wrap"><div class="nav_link-c contact grey"><div class="btn-text opacity-90">Book a call</div><div class="explode violet"></div><div class="book_a_call w-embed"><!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<a id="callButton" class="book_a_call" href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vlad-outcrowd/introductory-call-outcrowd-team?hide_gdpr_banner=1'});return false;"></a>
+<!-- Calendly link widget end --></div></div><a internal-link="" href="../contact-us.html" class="nav_link-c contact w-inline-block"><div class="btn-text opacity-90">Contact</div><div class="explode violet"></div></a></div><div class="hide w-embed w-script"><script>
+document.querySelectorAll('.nav_link-c').forEach(button => {
+  const explode = button.querySelector('.explode');
+	const btnTxt = button.querySelector('.btn-text');
+
+  button.addEventListener('mousemove', (e) => {
+    const rect = button.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    explode.style.left = `${x}px`;
+    explode.style.top = `${y}px`;
+    explode.style.transform = 'scale(50)';
+    btnTxt.style.color = 'white';
+		
+  });
+
+  button.addEventListener('mouseleave', () => {
+    explode.style.transform = 'scale(.1)';
+    btnTxt.style.color = '';
+		
+  });
+});
+
+</script></div><div data-w-id="d854c265-bf21-cd91-d958-4207ee115060" class="burger-wrap"><div class="burger-line first"></div><div class="burger-line second"></div></div></nav><div class="mob-menu"><div class="zero-block"></div><div class="mob-nav-block"><a href="../cases.html" class="mob-nav-link">Cases</a><a href="../services.html" class="mob-nav-link">Service</a><a href="../blog.html" class="mob-nav-link">Blog</a><a href="../about-us.html" class="mob-nav-link">About us</a></div><div class="mob-social-block"><a href="mailto:hello@outcrowd.io" class="mail-link">hello@outcrowd.io</a><div class="social-link-list"><a href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f15171cfef875605c_dribbble-icon%201.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a60440bb21735987e1a061_Vector.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043fe2f6b52ee7d1d12a_ph_instagram-logo-fill.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f6f3bdb0490b33e85_Social%20Icons.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f8b939a6f0fde8e05_Vector-1.svg" loading="lazy" alt="" class="icon-footer set-3"/><div class="explode _400"></div></div></a><div class="hide w-embed w-script"><script>
+  document.querySelectorAll('.social-footer').forEach(button => {
+    const explode = button.querySelector('.explode');
+   
+
+    button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      explode.style.left = `${x}px`;
+      explode.style.top = `${y}px`;
+      explode.style.transform = 'scale(20)';
+      
+    });
+
+    button.addEventListener('mouseleave', () => {
+      explode.style.transform = 'scale(.1)';
+      
+    });
+  });
+
+</script></div></div><a href="../contact-us.html" class="nav_link-c contact mob w-inline-block"><div class="btn-text opacity-90">Contact</div><div class="explode violet"></div></a></div></div></div><div class="hide w-embed w-script"><style>
+  .nav-new {
+    transition: background-color 0.3s ease;
+  }
+
+  .logo-white, .logo-black {
+    transition: opacity 0.3s ease, z-index 0.3s ease;
+  }
+
+</style>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navNew = document.querySelector('.nav-new');
+    const logoWhite = document.querySelector('.logo-white');
+    const logoBlack = document.querySelector('.logo-black');
+    const sections = document.querySelectorAll('[section-color]');
+    const btn = document.querySelector('.nav_link-c.contact.grey');
+    const btnTxt = document.querySelector('.nav_link-c.contact.grey .btn-text.opacity-90');
+    const navTxt = document.querySelectorAll('.nav-new .footer-nav-link.hover');
+
+    function updateNavStyles() {
+      const navRect = navNew.getBoundingClientRect();
+      let sectionColor = 'white'; // По умолчанию
+
+      if (window.innerWidth > 767) {
+        // Проверка цвета секции только для больших экранов
+        sections.forEach(section => {
+          const sectionRect = section.getBoundingClientRect();
+          if (navRect.top >= sectionRect.top && navRect.bottom <= sectionRect.bottom) {
+            sectionColor = section.getAttribute('section-color');
+          }
+        });
+
+        if (sectionColor === 'black') {
+          navNew.style.backgroundColor = '#191919';
+        } else {
+          navNew.style.backgroundColor = '#FAFAFA';
+        }
+      }
+
+      // Применение стилей в зависимости от ширины экрана
+      if (window.innerWidth <= 767) {
+        // Проверка цвета секции для мобильных устройств
+        sections.forEach(section => {
+          const sectionRect = section.getBoundingClientRect();
+          if (navRect.top >= sectionRect.top && navRect.bottom <= sectionRect.bottom) {
+            sectionColor = section.getAttribute('section-color');
+          }
+        });
+
+        if (sectionColor === 'black') {
+          logoWhite.style.opacity = '100';
+          logoWhite.style.zIndex = '3';
+          logoBlack.style.opacity = '0';
+          logoBlack.style.zIndex = '2';
+        } else {
+          logoWhite.style.opacity = '0';
+          logoWhite.style.zIndex = '2';
+          logoBlack.style.opacity = '100';
+          logoBlack.style.zIndex = '3';
+        }
+      } else {
+        // Стили для больших экранов
+        if (sectionColor === 'black') {
+          logoWhite.style.opacity = '100';
+          logoWhite.style.zIndex = '3';
+          logoBlack.style.opacity = '0';
+          logoBlack.style.zIndex = '2';
+        } else {
+          logoWhite.style.opacity = '0';
+          logoWhite.style.zIndex = '2';
+          logoBlack.style.opacity = '100';
+          logoBlack.style.zIndex = '3';
+        }
+      }
+
+      // Обновление стилей кнопок и текста
+      if (sectionColor === 'black') {
+        btn.style.backgroundColor = '#404040';
+        btnTxt.style.color = '#fff';
+        navTxt.forEach(element => {
+          element.style.color = '#fff';
+        });
+      } else {
+        btn.style.backgroundColor = '#E5E5E5';
+        btnTxt.style.color = '#080808';
+        navTxt.forEach(element => {
+          element.style.color = '#080808';
+        });
+      }
+    }
+
+    // Запускаем проверку при загрузке страницы
+    updateNavStyles();
+
+    // Обновляем стили при прокрутке
+    window.addEventListener('scroll', updateNavStyles);
+
+    // Обновляем стили при изменении размера окна
+    window.addEventListener('resize', updateNavStyles);
+  });
+</script>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const burgerWrap = document.querySelector('.burger-wrap');
+    const logoWhite = document.querySelector('.logo-white');
+    const logoBlack = document.querySelector('.logo-black');
+
+    // Функция для переключения стилей
+    function toggleLogoStyles() {
+      const isActive = logoWhite.style.opacity === '100';
+
+      if (isActive) {
+        // Сброс стилей при втором клике
+        logoWhite.style.opacity = '';
+        logoWhite.style.zIndex = '';
+        logoBlack.style.opacity = '';
+        logoBlack.style.zIndex = '';
+      } else {
+        // Установка стилей при первом клике
+        logoWhite.style.opacity = '100';
+        logoWhite.style.zIndex = '3';
+        logoBlack.style.opacity = '0';
+        logoBlack.style.zIndex = '2';
+      }
+    }
+
+    // Привязка события клика к burgerWrap
+    burgerWrap.addEventListener('click', toggleLogoStyles);
+  });
+</script></div><div class="hide w-embed w-script"><script>
+let lastScrollTop = 0;
+
+document.addEventListener("scroll", () => {
+  const screenWidth = window.innerWidth;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (screenWidth > 767) {
+    if (scrollTop > lastScrollTop) {
+      // Скролл вниз
+      document.querySelector('.header-btn-wrap').style.transition = 'width 0.7s ease';
+      document.querySelector('.header-btn-wrap').style.width = '16rem';
+
+      document.querySelector('.nav-link-wrap').style.transition = 'transform 0.7s ease, width 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav-link-wrap').style.transform = 'scale(0.6)';
+      document.querySelector('.nav-link-wrap').style.width = '0rem';
+      document.querySelector('.nav-link-wrap').style.opacity = '0';
+
+      document.querySelector('.nav-new').style.transition = 'width 0.7s ease';
+      document.querySelector('.nav-new').style.width = '24rem';
+
+      document.querySelector('.nav_link-c.contact.grey').style.transition = 'transform 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav_link-c.contact.grey').style.transform = 'scale(1)';
+      document.querySelector('.nav_link-c.contact.grey').style.opacity = '1';
+    } else {
+      // Скролл вверх
+      document.querySelector('.header-btn-wrap').style.transition = 'width 0.7s ease';
+      document.querySelector('.header-btn-wrap').style.width = '7rem';
+
+      document.querySelector('.nav-link-wrap').style.transition = 'transform 0.7s ease, width 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav-link-wrap').style.transform = 'scale(1)';
+      document.querySelector('.nav-link-wrap').style.width = '20rem';
+      document.querySelector('.nav-link-wrap').style.opacity = '1';
+
+      document.querySelector('.nav-new').style.transition = 'width 0.7s ease';
+      document.querySelector('.nav-new').style.width = '41rem';
+
+      document.querySelector('.nav_link-c.contact.grey').style.transition = 'transform 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav_link-c.contact.grey').style.transform = 'scale(0.6)';
+      document.querySelector('.nav_link-c.contact.grey').style.opacity = '0';
+    }
+
+    // Обновляем последнюю позицию скролла
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  }
+});
+
+</script></div></header><main class="main"><section class="section blog-article-hero"><div class="container"><h1 class="blog-article-heading">AI UX Guide: How to Design AI Features Users Can Trust</h1><div class="blog-article-subheading">A practical guide to making AI interfaces feel clear, controllable, and safe to use</div><div class="date-author"><div class="date-author-article">Rick Mess</div><div class="date-author-article">June 3, 2026</div><div class="date-author-article slash">|</div></div><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226defa135dfff6dca00f8_3547.webp" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226defa135dfff6dca00f8_3547-p-500.webp 500w, https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226defa135dfff6dca00f8_3547-p-800.webp 800w, https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226defa135dfff6dca00f8_3547-p-1080.webp 1080w, https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226defa135dfff6dca00f8_3547.webp 1400w" class="article-main-img"/><div class="rich-blog-new w-richtext"><p>Imagine a user asks AI to draft a customer email. The answer looks clean, the tone feels right, and the product offers a tempting button: “Send.”</p><p>The user clicks. Only later do they realize the message included outdated information from an old policy page.</p><p>The problem started before the click. The interface did not show where the answer came from, how current the source was, or what would happen after approval. The AI feature looked helpful, but the user had to trust it too early.</p><p>That is one of the biggest challenges in AI UX: helping users trust AI at the right moment and at the right level.</p><p>AI can now draft emails, summarize documents, explain data, recommend next steps, fill in forms, classify requests, and trigger actions. In a demo, this feels smooth. In a real product, the user still needs to answer a few practical questions:</p><p>Can I rely on this?</p><p>Where did it come from?</p><p>What will happen if I apply it?</p><p>Can I change it, undo it, or check it first?</p><p>Trust grows when the interface helps users understand what AI did, what it used, what it may have missed, and how much control the user still has.</p><blockquote>Good AI UX helps people move faster without making them feel like they’ve lost control.</blockquote><p>Here’s a practical guide to designing AI features that feel useful, honest, and safe to use.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226dd8a5c71760125ac942_1*gxkJvF4RaPfjoQbl1Gazcg.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/27043865-Datacore-Website-for-an-API-First-AI-Platform" target="_blank">AI infrastructure should feel clear before it feels powerful</a></figcaption></figure><h2>1. Make the AI role clear</h2><p>The first thing users need to understand is simple: what is AI doing here?</p><p>Many products introduce AI with vague labels like “smart assistant,” “AI-powered,” or “magic editor.” These phrases may work in marketing, but inside the product they often create confusion. The user sees AI, but does not know whether it is writing, checking, ranking, summarizing, predicting, or making a decision.</p><p>A clearer role creates better expectations.</p><p>Instead of naming the feature after the technology, name it after the task:</p><p>• Draft with AI<br/> • Summarize this thread<br/> • Suggest next steps<br/> • Check for missing details<br/> • Rank by relevance<br/> • Rewrite in a shorter version<br/> • Find risks in this document<br/> • Generate a first version</p><p>This kind of microcopy defines the user’s relationship with the feature.</p><p>If AI drafts, the user expects to review.</p><p>If AI suggests, the user expects options.</p><p>If AI checks, the user expects evidence.</p><p>If AI automates, the user expects control.</p><p>The more specific the role, the easier it is for users to understand how much authority the system has in that moment.</p><p>UX tip: name the AI feature after the user’s task, not after the technology behind it.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226dd8a5c71760125ac936_1*xe-5LB_-7xNlZ888eI0pog.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/27061593-Link-ai-Multi-Page-Real-Estate-Website" target="_blank">A clear AI entry point helps users understand what the assistant can do and where human action is still needed</a></figcaption></figure><h2>2. Show where the answer comes from</h2><p>Users feel safer when they can trace the result.</p><p>This matters especially when AI gives an answer that sounds confident. A clean paragraph may look convincing, but users still need to know what supports it. Without visible grounding, AI output can feel impressive and fragile at the same time.</p><p>A good interface helps users answer basic questions:</p><p>• What sources were used?<br/> • Which part of the source supports this claim?<br/> • Is the source current?<br/> • Is the answer based on uploaded files, product data, public information, or user input?<br/> • Is anything missing?</p><p>Plain citations can help, but they are often too thin. A link at the bottom of the answer does not always show what was verified. A better pattern is to connect key claims with visible evidence.</p><p>Useful UX patterns:</p><p>• Source cards with title, date, and short context<br/> • Highlighted evidence inside the original document<br/> • “Compare with source” view<br/> • Labels for uploaded files, internal data, or external references<br/> • A warning when the source is missing, weak, outdated, or incomplete</p><p>For example, imagine an AI feature that summarizes a policy document. A generic summary may save time. A summary with linked source fragments is safer. The user can see which paragraph supports each point, where the document is silent, and what may need human review.</p><p>The goal is simple: make checking easy enough that users actually do it.</p><p>UX tip: when AI gives a recommendation, show the strongest evidence near the recommendation.</p><h2>3. Design for uncertainty</h2><p>AI should not sound equally certain in every situation.</p><p>Some answers are well grounded. Some are partial. Some depend on missing context. Some are based on conflicting information. If the interface presents all of them with the same confident tone, users have to detect uncertainty on their own.</p><p>Uncertainty needs clear interface states. They do not have to be dramatic. They just need to be readable.</p><p>For example:</p><p>• Enough context to answer<br/> • Limited context<br/> • Missing source<br/> • Conflicting information found<br/> • This may be incomplete<br/> • Needs review before use<br/> • Could not verify this claim</p><p>These states help users calibrate trust. They also make the product feel more honest. A system that can say “I do not have enough context” often feels safer than a system that always produces a polished answer.</p><p>Confidence scores can be useful when the method behind them is clear. Without that context, plain-language states are often easier to understand.</p><p>Better options:</p><p>• Strongly supported by the selected sources<br/> • Partially supported<br/> • No source found for this part<br/> • Conflicting details found<br/> • Review recommended</p><p>AI can produce incomplete, outdated, unsupported, or misleading results. The interface should help users notice that before they act.</p><p>UX tip: show uncertainty before the user takes action.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226dd8a5c71760125ac93e_1*YhPCyVkObSmjQ7_EM4jU7g.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/27252486-AI-Personal-Growth-App-Design" target="_blank">Defined states make uncertain AI moments easier to understand</a></figcaption></figure><h2>4. Keep the user in control</h2><p>AI can reduce effort, but it should not quietly remove control.</p><p>This becomes more important as AI moves from passive help to active execution. There is a big difference between an AI feature that suggests a reply and one that sends it. Or between one that summarizes customer feedback and one that changes a customer status in the CRM.</p><blockquote>The more AI can do, the more visible the control layer should be.</blockquote><p>Users need ways to:</p><p>• Edit before applying<br/> • Preview before sending<br/> • Approve before execution<br/> • Undo or roll back<br/> • Adjust the level of automation<br/> • Turn the feature off for a specific task<br/> • Choose between manual and AI-assisted flow</p><p>Control does not always mean adding friction. It means giving the user the right level of confirmation for the risk of the action.</p><p>For low-risk actions, a simple “Apply” button may be enough.</p><p>For medium-risk actions, show a preview.</p><p>For high-risk actions, ask for approval and make the consequences clear.</p><p>A good AI interface should make assistance visible and control easy to find.</p><p>UX tip: separate “Generate,” “Apply,” and “Send.” These are different levels of commitment.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226dd9a5c71760125ac96a_1*alUyRMSM6jRXdFqoKWnRHQ.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/27061610-Link-ai-Deals-Management-Collaboration" target="_blank">Stages, activity history, and shared ownership help users stay in control</a> </figcaption></figure><h2>5. Make actions predictable</h2><p>Users should never have to wonder, “What did AI just do?”</p><p>Before any meaningful AI-powered action, the interface should show what will happen next. This is especially important when AI affects shared data, customer communication, settings, workflows, permissions, payments, or public content.</p><p>For example, before AI updates a CRM record, show:</p><p>• Which fields will change<br/> • What the old values are<br/> • What the new values will be<br/> • Why the change is suggested<br/> • Who will see the update<br/> • Whether the action can be undone</p><p>Before AI sends a message, show:</p><p>• The final text<br/> • The recipient<br/> • The tone or intent<br/> • Any attached files or inserted data<br/> • Whether the message will be sent now or saved as a draft</p><p>Predictability turns automation into something users can understand. Without it, even a helpful AI feature can feel risky.</p><p>UX tip: design AI actions like a transaction: input, output, consequence, and recovery.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226dd9a5c71760125ac957_1*VKr6bH-KMX9QKY6IA_PxBQ.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/27061610-Link-ai-Deals-Management-Collaboration" target="_blank">Status, owners, documents, and next actions show what happens next</a></figcaption></figure><h2>6. Give users a way to correct AI</h2><p>When AI gets something wrong, the workflow has to help users recover.</p><p>If users cannot correct the system, they lose trust quickly. They may still use the feature, but they will use it with suspicion. Or they will stop using it after the first serious mistake.</p><p>Correction flows should be easy, visible, and specific.</p><p>Useful options:</p><p>• Edit manually<br/> • Regenerate with feedback<br/> • Mark as incorrect<br/> • Report a wrong source<br/> • Choose a better version<br/> • Save a preference<br/> • Explain what was wrong<br/> • Restore the previous version</p><p>A simple thumbs-up or thumbs-down is rarely enough. It may help the model team, but it does not always help the user complete the task.</p><p>Better correction UX connects feedback to action.</p><p>For example:</p><p>• “This summary missed an important detail”<br/> • “This source does not support the claim”<br/> • “Use a shorter tone next time”<br/> • “Do not include pricing details”<br/> • “Regenerate using only uploaded documents”</p><p>This helps the user fix the current result and gives the product a chance to improve the next one.</p><p>UX tip: let users correct the output at the level where the mistake happened: source, tone, fact, format, action, or preference.</p><h2>7. Avoid overpromising in microcopy</h2><p>Trust often starts breaking before the user even sees the result. It starts with the promise.</p><p>AI microcopy can easily become too bold. Phrases like “perfect answer,” “fully automated,” “instant expert,” or “100% accurate” create expectations the product cannot safely meet.</p><p>This is especially risky when AI works with complex, sensitive, or incomplete information. The interface should invite trust gradually, through clarity and performance.</p><p>Risky microcopy:</p><p>• Perfect answer<br/> • 100% accurate<br/> • Fully automated<br/> • No review needed<br/> • Guaranteed result<br/> • Replace your workflow<br/> • Let AI handle everything</p><p>Better microcopy:</p><p>• Suggested draft<br/> • Review before sending<br/> • Check sources<br/> • Summarize with AI<br/> • Generate a first version<br/> • Suggested next step<br/> • AI found possible issues<br/> • Apply after review</p><p>This does not make the product sound weaker. It makes it sound more credible.</p><p>Good AI copy should set the right expectation before the user meets the result.</p><p>UX tip: use verbs that describe assistance, unless the system truly has permission to act.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/69b02d1f2da5831b757f8748_1*-HZTgPRyNa6x4BnAx1zvzw.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/26824266-Pitch-Deck-for-AI-powered-lead-generation-and-data-enrichment" target="_blank">The bigger the AI promise, the clearer the interface should be</a></figcaption></figure><h2>8. Design recovery, not just success</h2><p>AI product demos usually show the happy path. A user asks a question, AI gives a neat answer, everyone nods.</p><p>Real products are messier.</p><p>Sometimes the AI cannot answer. Sometimes the source is unavailable. Sometimes the uploaded file is too complex. Sometimes the result is incomplete. Sometimes the action fails. Sometimes the user wants to go back.</p><p>These moments need design.</p><p>Important recovery states:</p><p>• AI could not generate a reliable answer<br/> • The source is unavailable<br/> • The result may be incomplete<br/> • Some data could not be processed<br/> • This action failed<br/> • Human review is required<br/> • Manual flow is still available<br/> • Previous version restored</p><p>A vague “Something went wrong” message is not enough, especially when the user depends on AI to complete a task.</p><p>A better failure state explains:</p><p>• What happened<br/> • What was affected<br/> • What the user can do next<br/> • Whether their data or work is safe<br/> • Whether they can retry, edit, or switch to manual mode</p><p>Recovery is a major part of trust. Users do not expect software to be perfect. They do expect it to behave responsibly when something goes wrong.</p><p>UX tip: always keep a manual path available for important workflows.</p><h2>9. Make AI visible at the right moments</h2><p>Some products hide AI too much. Others make AI too loud.</p><p>If AI is hidden, users may not understand where a result came from or why something changed. If AI is constantly promoted, the interface starts to feel noisy and self-important.</p><p>The better approach is contextual visibility. Show AI when it matters for understanding, control, or decision-making.</p><p>Make AI visible when:</p><p>• The system generated content<br/> • The system changed or suggested data<br/> • The result needs review<br/> • Sources or confidence matter<br/> • The action affects other people<br/> • The user may want to undo or adjust the result</p><p>Keep AI quiet when:</p><p>• It only improves formatting<br/> • It helps with minor background tasks<br/> • The user does not need to make a trust decision<br/> • Mentioning AI adds no useful information</p><p>The interface does not need to celebrate AI every time it appears. It needs to show AI clearly when the user’s decision depends on it.</p><p>UX tip: label AI-generated content, but avoid turning every AI-assisted detail into a product announcement.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226dd8a5c71760125ac947_1*F2-GzOx__3h8N_5IrewxNQ.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/27373704-AI-Conversation-Assistant-App" target="_blank">AI feels more helpful when it appears at the right moment</a></figcaption></figure><h2>10. Build trust through repeated small moments</h2><p>Users do not trust AI because the product tells them to. They trust it after a series of small, consistent interactions.</p><p>The feature suggests something useful.</p><p>The user can check it.</p><p>The source makes sense.</p><p>The action is previewed.</p><p>The result can be edited.</p><p>The system admits uncertainty when needed.</p><p>The user can recover from mistakes.</p><p>Over time, this creates a calmer relationship with AI. The user starts treating AI less like a mystery and more like a tool they understand.</p><p><strong>Before adding AI to an interface, product teams can ask:</strong></p><p>• What exactly does AI do here?<br/> • Can the user verify the result?<br/> • Can they edit, reject, or undo it?<br/> • Do they understand what happens next?<br/> • What happens when AI is wrong?<br/> • Is the microcopy setting honest expectations?<br/> • Does the user still have a manual path?</p><p>These questions keep the feature grounded in user experience, not just technical capability.</p><p>Trust is built in the moments when the system explains, slows down, or helps the user recover.</p><figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/6a226dd9a5c71760125ac971_1*698eIGuXitJFZggrqSnWLg.png" loading="lazy"/></div><figcaption><a href="https://dribbble.com/shots/27091749-FlowMark-Website-for-AI-powered-learning-app" target="_blank">Clear progress, recommendations, and next steps help AI feel easier to trust</a></figcaption></figure><h2>Before you ship AI into the interface</h2><p>AI can make products faster, smarter, and more helpful. But speed alone does not create trust. A polished answer does not create trust either.</p><p>Trust comes from the way the product behaves around the answer.</p><p>Can the user see where it came from?</p><p>Can they understand its limits?</p><p>Can they control the next step?</p><p>Can they fix it when it is wrong?</p><p>Can they recover without losing work?</p><p>The best AI interfaces give people enough clarity, control, and recovery to trust the system step by step.</p><p>‍</p></div><div class="form-block hhidden"><div class="form-heading">Innovate with us</div><div class="form-subheading">Our creative solutions have helped clients raise $100M+ and expand their reach.</div><div class="contact-form-wrapper"><form id="contactForm" class="contact-form"><div class="inputs-block"><div class="required-input-wrapper"><input type="text" id="nameInput" placeholder="Your Name" name="Name" class="input"/><div input-error="" class="input-error-message">Please fill in this field.</div></div><div class="required-input-wrapper"><input type="email" id="emailInput" placeholder="Email" name="Email" class="input"/><div input-error="" class="input-error-message">Please fill in this field.</div></div><select id="budgetInput" name="Budget" class="input select"><option value="Budget not defined">Budget not defined</option><option value="1">2-5k</option><option value="2">5-10k</option><option value="3">10-20k</option><option value="4">20-30k</option></select><textarea id="commentInput" placeholder="Message" name="Comment" class="input text-area"></textarea><div class="turnstile-embed w-embed"><div id="turnstile-container"></div></div></div><div class="utm-inputs"><input type="hidden" name="utm_source" id="utm_source" class="utm-input"/><input type="hidden" name="utm_medium" id="utm_medium" class="utm-input"/><input type="hidden" name="utm_campaign" id="utm_campaign" class="utm-input"/><input type="hidden" name="utm_term" id="utm_term" class="utm-input"/><input type="hidden" name="utm_content" id="utm_content" class="utm-input"/></div><button type="submit" class="submit-form">Submit</button></form><div class="form-js w-embed w-script"><script>
+  let captchaToken = "";
+
+  function onTurnstileCallback(token) {
+    captchaToken = token;
+    console.log("Captcha Token:", token);
+  }
+
+  function onTurnstileLoad() {
+    const container = document.getElementById("turnstile-container");
+    if (!container) {
+      console.error("Container Turnstile not found!");
+      return;
+    }
+
+    turnstile.render(container, {
+      sitekey: "0x4AAAAAABFkOkes0GAymTea",
+      callback: onTurnstileCallback
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const submitBtn = form.querySelector(".submit-form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let hasError = false;
+      const wrappers = form.querySelectorAll(".required-input-wrapper");
+
+      wrappers.forEach(wrapper => {
+        const input = wrapper.querySelector("input");
+        const errorBlock = wrapper.querySelector("[input-error]");
+
+        if (!input.value.trim()) {
+          errorBlock.style.display = "block";
+          hasError = true;
+        } else {
+          errorBlock.style.display = "none";
+        }
+      });
+
+      if (hasError) return;
+
+      if (!captchaToken) {
+        alert("Please confirm that you are not a bot.");
+        return;
+      }
+
+      const Name = document.getElementById("nameInput").value.trim();
+      const Email = document.getElementById("emailInput").value.trim();
+      const Budget = document.getElementById("budgetInput").value.trim();
+      const Comment = document.getElementById("commentInput").value.trim();
+
+      const utm_source = document.getElementById("utm_source")?.value || "";
+      const utm_medium = document.getElementById("utm_medium")?.value || "";
+      const utm_campaign = document.getElementById("utm_campaign")?.value || "";
+      const utm_term = document.getElementById("utm_term")?.value || "";
+      const utm_content = document.getElementById("utm_content")?.value || "";
+
+      submitBtn.textContent = "Please wait...";
+      submitBtn.disabled = true;
+
+      fetch("https://webflow-to-zoho.netlify.app/.netlify/functions/handle-webflow-deal", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          Name,
+          Email,
+          Budget,
+          Comment,
+          captchaToken,
+          utm_source,
+          utm_medium,
+          utm_campaign,
+          utm_term,
+          utm_content
+        })
+      })
+        .then(data => {
+          console.log("📨 Success Sending:", data);
+
+          localStorage.setItem("formData", JSON.stringify({
+            Name,
+            Email,
+            Budget,
+            Comment
+          }));
+
+          window.location.href = "/success";
+        })
+        .catch(err => {
+          console.error("Send Fail:", err);
+          alert("Sending error, try again.");
+          submitBtn.textContent = "Submit";
+          submitBtn.disabled = false;
+        });
+    });
+  });
+</script>
+
+<!-- Cloudflare Turnstile -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad" async defer></script></div></div></div></div></section></main><section section-color="black" data-w-id="505a594f-6be9-46a4-c000-a940fb77655c" class="section is-cta"><div class="container is-cta"><div data-w-id="87fb7b75-2f9f-4817-13e4-566ea0f8bfae" class="cta-wrap"><div data-w-id="f515b4c4-2fcd-4d20-0746-26efdc8bb300" class="cta-card-wrapper"><div class="cta-card"><div class="cta-left"><h2 class="cta-heading">Innovate with us</h2><div class="b1 grey text-ailng-left max-w-29">Our creative solutions have helped clients raise $100+ mln and expand their reach.</div><div class="cta-btn-wrap"><a internal-link="" href="../contact-us.html" class="nav_link-cta orange w-inline-block"><div class="bg-btn"><div class="btn-text">Write us</div></div><div class="explode violet"></div></a><div class="nav_link-cta violet"><div class="btn-text">Book a call</div><div class="explode violet"></div><div class="book_a_call w-embed"><!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<a id="callButton" class="book_a_call" href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/outcrowd-digital-agency/introduction?hide_gdpr_banner=1'});return false;"></a>
+<!-- Calendly link widget end --></div><div class="hide w-embed w-script"><script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<script>
+  document.getElementById('callButton').addEventListener('click', function() {
+    document.getElementById('menuButton').click();
+  });
+</script></div></div></div></div><div class="cta-right"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66bf047f8e12e9868e4c8f45_dashboard-cta.svg" loading="lazy" alt="" class="cta-img"/></div></div><div class="stats-card-gradient _2"></div></div></div></div><div class="hide w-embed w-script"><script>
+  document.querySelectorAll('.nav_link-cta').forEach(button => {
+    const explode = button.querySelector('.explode');
+    const btnTxt2 = button.querySelector('.btn-text');
+
+
+    button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      explode.style.left = `${x}px`;
+      explode.style.top = `${y}px`;
+      explode.style.transform = 'scale(70)';
+      btnTxt2.style.color = '#fff'
+
+    });
+
+    button.addEventListener('mouseleave', () => {
+      explode.style.transform = 'scale(.1)';
+      btnTxt2.style.color = ''
+
+    });
+  });
+
+</script></div></section><footer section-color="black" class="footer"><div class="container is-footer"><div class="footer-main"><div class="nav-block"><div class="footer-col"><div class="footer-secondary-link-list"><a internal-link="" href="../cases.html" class="footer-link main w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link white">Cases</div><div class="footer-nav-link hover">Cases</div></div></a><a internal-link="" href="https://fitonist-app.webflow.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Fitonist</div><div class="footer-nav-link hover">Fitonist</div></div></a><a internal-link="" href="https://www.brainforest.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Brainforest</div><div class="footer-nav-link hover">Brainforest</div></div></a><a internal-link="" href="https://www.cybervergent.com/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Cybervergent</div><div class="footer-nav-link hover">Cybervergent</div></div></a><a internal-link="" href="https://nopan.webflow.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Nopan</div><div class="footer-nav-link hover">Nopan</div></div></a><a internal-link="" href="https://ramos-app.webflow.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Ramos</div><div class="footer-nav-link hover">Ramos</div></div></a></div></div><div class="footer-col"><div class="footer-secondary-link-list"><a internal-link="" href="../services.html" class="footer-link main w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link white">Services</div><div class="footer-nav-link hover">Services</div></div></a><a internal-link="" href="ai-ux-guide-how-to-design-ai-features-users-can-trust.html#" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Complex solution</div><div class="footer-nav-link hover">Complex solution</div></div></a><a internal-link="" href="../branding-page.html" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Branding</div><div class="footer-nav-link hover">Branding</div></div></a><a internal-link="" href="../design-page.html" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Design</div><div class="footer-nav-link hover">Design</div></div></a><a internal-link="" href="../development-page.html" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Development</div><div class="footer-nav-link hover">Development</div></div></a></div></div><div class="footer-col"><div class="footer-secondary-link-list"><a internal-link="" href="../about-us.html" class="footer-link main w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link white">About us</div><div class="footer-nav-link hover">About us</div></div></a><a internal-link="" href="../about-us.html#numbers" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Numbers</div><div class="footer-nav-link hover">Numbers</div></div></a><a internal-link="" href="../about-us.html#mission" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Mission</div><div class="footer-nav-link hover">Mission</div></div></a><a internal-link="" href="../about-us.html#values" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Values</div><div class="footer-nav-link hover">Values</div></div></a><a internal-link="" href="../about-us.html#clients" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Clients</div><div class="footer-nav-link hover">Clients</div></div></a></div></div></div><div class="links-block"><a href="mailto:hello@outcrowd.io" class="email-link">hello@outcrowd.io</a><div class="social-link-list is-footer"><a href="https://dribbble.com/outcrowd" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f15171cfef875605c_dribbble-icon%201.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="https://www.behance.net/outcrowd" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a60440bb21735987e1a061_Vector.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="https://www.instagram.com/outcrowdstudio/" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043fe2f6b52ee7d1d12a_ph_instagram-logo-fill.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="https://x.com/outcrowdstudio" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f6f3bdb0490b33e85_Social%20Icons.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="https://www.linkedin.com/company/outcrowd-network/?originalSubdomain=ua" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f8b939a6f0fde8e05_Vector-1.svg" loading="lazy" alt="" class="icon-footer set-3"/><div class="explode _400"></div></div></a><div class="hide w-embed w-script"><script>
+  document.querySelectorAll('.social-footer').forEach(button => {
+    const explode = button.querySelector('.explode');
+   
+
+    button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      explode.style.left = `${x}px`;
+      explode.style.top = `${y}px`;
+      explode.style.transform = 'scale(20)';
+      
+    });
+
+    button.addEventListener('mouseleave', () => {
+      explode.style.transform = 'scale(.1)';
+      
+    });
+  });
+
+</script></div><div class="hide w-embed w-script"><style>
+.email-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.0625rem;
+    background: currentColor;
+    will-change: transform;
+    transform-origin: 100% 100%;
+    transform: scaleX(0);
+    pointer-events: none;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-duration: .5s
+}
+
+.email-link:hover:after {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+.social-footer-wrap {
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+  }
+</style>
+
+<script>
+  const magnets2 = document.querySelectorAll('.social-footer-wrap');
+  const strength2 = 10; // Сила магнитного эффекта
+
+  magnets2.forEach(magnet => {
+    magnet.addEventListener('mousemove', (e) => {
+      const magnetRect = magnet.getBoundingClientRect();
+      const magnetX = magnetRect.left + magnetRect.width / 2;
+      const magnetY = magnetRect.top + magnetRect.height / 2;
+
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      const distX = (mouseX - magnetX) / magnetRect.width * strength2;
+      const distY = (mouseY - magnetY) / magnetRect.height * strength2;
+
+      magnet.style.transform = `translate(${distX}px, ${distY}px)`;
+    });
+
+    magnet.addEventListener('mouseleave', () => {
+      magnet.style.transform = 'translate(0, 0)';
+    });
+  });
+
+</script></div></div></div></div><div class="footer-bot"><div class="copy max-w-14">Copyright © 2025 Outcrowd Inc. All rights reserved.</div><div class="copy">Lewes - USA</div></div></div></footer><div class="w-embed"><style>
+  /* Animation of input when focus */
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { transition: .2s; }
+  input:-moz-placeholder, textarea:-moz-placeholder { transition: .2s; }
+  input::-moz-placeholder, textarea::-moz-placeholder { transition: .2s; }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholde { transition: .2s; }
+  input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholde { opacity: 0; }
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { opacity: 0; }
+  input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { opacity: 0; }
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { opacity: 0; }
+  /* Disabled display of border when focus on element */
+  *:focus { outline: 0; }
+  /* Make text look crisper and more legible in all browsers */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding-right: 0px !important;
+  }
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+  }
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+  /* Prevent all click and hover interaction with an element */
+  .pointer-events-off { pointer-events: none; }
+  /* Enables all click and hover interaction with an element */
+  .pointer-events-on { pointer-events: auto; }
+  /* Make sure containers never lose their center alignment */
+  .container-medium,.container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #080808 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #f5f5f5 inset !important;
+  background-color: #f5f5f5 !important;
+}
+
+  a,
+  .w-select,
+  .w-tab-link,
+  .w-nav-link,
+  .w-dropdown-btn,
+  .w-dropdown-toggle,
+  .w-dropdown-link {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+  }
+
+  /* Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  /* Adds inline flex display */
+  .display-inlineflex { display: inline-flex; }
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+  @media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+  }
+
+  /*Fluid responsive */
+  html { font-size: 1rem; }
+
+  @media screen and (min-width: 1920px) {
+    html { font-size: .6vw; }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1919px){
+    html { font-size: 1vw; }
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    html { font-size: 1vw; }
+  }
+
+.calendly-popup-close {
+z-index: 1000000;
+}
+</style></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=667a7576e7e7ef3ba89b3f2a" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/js/webflow.schunk.f2efb3c5440a81cf.js" type="text/javascript" integrity="sha384-VK02VJvMib7ytrF5M2joPWNtDQs366FZgEQ5B+Iwnjx0WBnwQXfootyziSYxdrmS" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/js/webflow.schunk.905be2c09f8db3a4.js" type="text/javascript" integrity="sha384-mqUlJQhtR8a7nNFps+RqZs1k7+X6tsn2Pp9rIAV0Yx6f9t9ew+1P6uleO33KqWFo" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/js/webflow.46ca6895.f3f60b4890b4e2cb.js" type="text/javascript" integrity="sha384-tpRiCi6mj3S5i61x3qTdqT9M+4j31H6+GaBlD/QhluVlzHpHXkpTXDsghtbnVtLA" crossorigin="anonymous"></script><script src='https://cdn.jsdelivr.net/gh/athlonstudio/webflow-lottie-lazy-loader@2.4/src/lottieLazyLoading.min.js'></script>
+<script src = "https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
+
+<script type="text/javascript">
+_linkedin_partner_id = "4907385";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+
+<script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4907385&fmt=gif" />
+</noscript>
+
+<script type="text/javascript" src='https://crm.zoho.eu/crm/javascript/zcga.js'></script>
+
+<script>
+  (function () {
+    const utmFields = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+
+    function storeUTMParams() {
+      const params = new URLSearchParams(window.location.search);
+      utmFields.forEach(field => {
+        const value = params.get(field);
+        if (value) {
+          localStorage.setItem(field, value);
+        }
+      });
+    }
+
+    function applyUTMParams() {
+      utmFields.forEach(field => {
+        const input = document.getElementById(field);
+        const stored = localStorage.getItem(field);
+        if (input && stored) {
+          input.value = stored;
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      storeUTMParams();
+      applyUTMParams();
+    });
+  })();
+</script>
+
+
+<!-- UTM Tracker -->
+<script>
+  (function () {
+    const utmFields = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+
+    function storeUTMParams() {
+      const params = new URLSearchParams(window.location.search);
+      utmFields.forEach(field => {
+        const value = params.get(field);
+        if (value) {
+          localStorage.setItem(field, value);
+        }
+      });
+    }
+
+    function applyUTMParams() {
+      utmFields.forEach(field => {
+        const input = document.getElementById(field);
+        const stored = localStorage.getItem(field);
+        if (input && stored) {
+          input.value = stored;
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      storeUTMParams();
+      applyUTMParams();
+    });
+  })();
+</script>
+<!-- End UTM Tracker --><script src = "https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const lenis = new Lenis({
+      lerp: 0.09,
+      smoothWheel: true,
+      wheelMultiplier: 0.7,
+      gestureOrientation: 'vertical',
+      normalizeWheel: false,
+      smoothTouch: false
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    // Сброс прокрутки при загрузке страницы
+    window.addEventListener('load', () => {
+      if (window.innerWidth > 767) {
+        setTimeout(() => {
+          lenis.scrollTo(0, {
+            immediate: true
+          });
+        }, 0);
+      }
+    });
+
+    // Управление Lenis с помощью кнопок
+    document.querySelectorAll("[data-lenis-start]").forEach(el => {
+      el.addEventListener("click", () => lenis.start());
+    });
+
+    document.querySelectorAll("[data-lenis-stop]").forEach(el => {
+      el.addEventListener("click", () => lenis.stop());
+    });
+
+    document.querySelectorAll("[data-lenis-toggle]").forEach(el => {
+      el.addEventListener("click", function() {
+        this.classList.toggle("stop-scroll");
+        if (this.classList.contains("stop-scroll")) {
+          lenis.stop();
+        } else {
+          lenis.start();
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+<!-- [Attributes by Finsweet] Custom Form Select -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-selectcustom@1/selectcustom.js"></script>
+
+<script>
+  function checkScaleAndSetOpacity() {
+    document.querySelectorAll('.explode').forEach(explode => {
+      // Получаем текущую трансформацию элемента
+      const transform = window.getComputedStyle(explode).transform;
+
+      if (transform !== 'none') {
+        // Извлекаем значение scale из матрицы трансформации
+        const matrixValues = transform.match(/matrix.*\((.+)\)/)[1].split(', ');
+        const scaleX = parseFloat(matrixValues[0]);
+
+        // Проверяем значение scale и устанавливаем opacity
+        if (scaleX <= 0.1) {
+          explode.style.opacity = '0';
+        } else {
+          explode.style.opacity = '1';
+        }
+      }
+    });
+  }
+
+  // Вызываем функцию для проверки при загрузке страницы и через определенные интервалы
+  window.addEventListener('load', checkScaleAndSetOpacity);
+  setInterval(checkScaleAndSetOpacity, 100); // Проверяем каждые 100 мс
+</script>
+
+<!-- Error Form -->
+<script>
+$('[wr-type="error"]').hide() // Hide errors
+$('.error').removeClass('error') // Remove error state from fields
+
+var formErrors = false
+
+const fieldError = function(field) {
+	field.parent().find('[wr-type="error"]').show() // Show error message
+  field.addClass('error') // Add error state to this field
+  formErrors = true
+}
+
+// Click on the Submit button
+$('[wr-type="submit"]').click(function() {
+  // Check each required field
+  $('[wr-type="required-field"]').each(function() {
+  	if ($(this).attr('type') === 'checkbox' && !$(this).is(':checked')) { // Checkbox
+    	fieldError($(this).siblings('.w-checkbox-input'))
+      return
+    }
+  	if ($(this).val().length === 0) { // If this field is empty
+    	fieldError($(this))
+    } else if ($(this).attr('type') === 'email' // Validation for email fields
+   	  && ( $(this).val().indexOf('@') === -1 || $(this).val().indexOf('.') === -1) ) {
+    		fieldError($(this))
+    }
+  })
+  // Submit parent form if there are no errors
+  if (!formErrors) $(this).parents('form').submit()
+})
+
+// Remove errors from field
+$('[wr-type="required-field"], [type="checkbox"]').on('keypress blur', function() {
+	$(this).parent().find('.error').removeClass('error')
+	$(this).parent().find('[wr-type="error"]').hide()
+  formErrors = false
+})
+
+// Press Enter
+$('input, textarea').keypress(function(e) { 
+  if (e.keyCode == 13) {
+    e.preventDefault()
+    $(this).trigger("change")
+    $('[wr-type="submit"]').click()
+  }
+})
+</script>
+<!-- End Error Form --></body></html>

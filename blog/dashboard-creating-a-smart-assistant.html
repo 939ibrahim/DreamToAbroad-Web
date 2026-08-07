@@ -1,0 +1,860 @@
+<!DOCTYPE html><!-- Last Published: Wed Jul 08 2026 12:00:30 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.outcrowd.io" data-wf-page="667a7576e7e7ef3ba89b3f6b" data-wf-site="667a7576e7e7ef3ba89b3f2a" lang="en" data-wf-collection="667a7576e7e7ef3ba89b3f40" data-wf-item-slug="dashboard-creating-a-smart-assistant"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Dashboard: Creating a Smart Assistant</title><meta content="Where to start with a dashboard and how to make the most of it" name="description"/><meta content="Dashboard: Creating a Smart Assistant" property="og:title"/><meta content="Where to start with a dashboard and how to make the most of it" property="og:description"/><meta content="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41dd_61405b25b8db462b4b9e1282_601c135f2e386437c4e0849b_preview.webp" property="og:image"/><meta content="Dashboard: Creating a Smart Assistant" name="twitter:title"/><meta content="Where to start with a dashboard and how to make the most of it" name="twitter:description"/><meta content="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41dd_61405b25b8db462b4b9e1282_601c135f2e386437c4e0849b_preview.webp" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/css/outcrowd-2-0-new-superfinal.webflow.shared.586b00c50.min.css" rel="stylesheet" type="text/css" integrity="sha384-WGsAxQqs4dRI2LjLaIoHE3A35cN0sVEm9by6wOmjH8hnLt9dEBNopK1FfRjNwqea" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Lora:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66c8868efa543e643672fbac_favicon-logo.webp" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66c88694a996450fa3340232_webclip-logo.webp" rel="apple-touch-icon"/><link href="https://www.outcrowd.io/blog/dashboard-creating-a-smart-assistant" rel="canonical"/><script src="https://t.contentsquare.net/uxa/b4bc87ad96f6d.js"></script>
+
+<!-- LuckyOrange -->
+<script async defer src=“https://tools.luckyorange.com/core/lo.js?site-id=beedb5f1”></script>
+<!-- End LuckyOrange -->
+
+<!-- Finsweet Cookie Consent -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in"></script>
+
+<!-- Google Tag Manager -->
+<script type="fs-cc" fs-cc-categories="personalization, analytics, marketing">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSVN3H9T');
+</script>
+<!-- End Google Tag Manager -->
+
+<style>
+  /* Scroll */
+  ::-webkit-scrollbar { width: 0px; }
+  ::-webkit-scrollbar-thumb { background: #ccc;}
+  ::-webkit-scrollbar-track { background: #fff;}   
+
+
+  html.lenis {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+</style>
+
+<!-- Zoho Marketing Automation -->
+<script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops("3z8d4b91e160eba7c4b33c1452b09237f5","3z6f0185ca0cf5064c89f195b63d58dd13","3zcfe9936e41b7debbc8a2e7bbf332b2d8cd409973d73feb32528c9f7a09975655","3z646c8ab2f141264e6fef4fb1f01a34eb","0.0");}catch(e){}}};}else {s.onload = function(){try{loadwaprops("3z8d4b91e160eba7c4b33c1452b09237f5","3z6f0185ca0cf5064c89f195b63d58dd13","3zcfe9936e41b7debbc8a2e7bbf332b2d8cd409973d73feb32528c9f7a09975655","3z646c8ab2f141264e6fef4fb1f01a34eb","0.0");}catch(e){}};};s.src =p+"//ma.zoho.eu/hub/js/WebsiteAutomation.js";f.parentNode.insertBefore(s, f);</script>
+<!-- End Zoho Marketing Automation -->
+
+<!-- Zoho PageSense -->
+<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siq356ac5ee2ae62f560ca1f8898d9b98b0c3aff35c31cf02e25a4358406e52a64c", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.eu/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+<script type="text/javascript">(function(w,s){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://cdn-eu.pagesense.io/js/outcrowd/5d6f7ea2b19c45c08ba9fe8553b86b71.js";var x=document.getElementsByTagName("script")[0];x.parentNode.insertBefore(e,x);})(window,"script");</script>
+<!-- End Zoho PageSense --><style>
+  .text-field {
+    outline: none; 
+  }
+
+  .text-field:focus {
+    border: 1px solid var(--New-Color-Violet, #774DFF);
+    color: #080808;
+  }
+
+  .text-field:focus:not(:placeholder-shown) {
+    border: 1px solid var(--New-Color-Violet, #774DFF);
+    color: #080808;
+    caret-color: #774DFF; 
+  }
+
+  .text-field:not(:placeholder-shown) {
+    border: 1px solid #F5F5F5;
+    color: #080808;
+  }
+
+  figcaption a,
+  figcaption em,
+  figcaption strong {
+    font-family: "Itcav Bk", sans-serif;
+    color: #737373 !important;
+    text-decoration: underline;
+    font-style: normal;
+    font-size: 1.1rem;
+  }
+</style></head><body><div class="page-wrapper"><header data-w-id="8b251f90-ecf6-2712-000f-63a6e0b37b66" class="header-new"><div class="header-wrapper"><nav class="nav-new"><a internal-link="" href="/" class="logo-nav w-inline-block"><div data-w-id="1f1db639-7034-cf0f-006c-9f8dedd8dfa7" data-is-ix2-target="1" class="logo-white" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66bdefa0a9bf14b3cb560686_logo%20white.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2" data-duration="0" data-loading="eager"></div><div data-w-id="335a1b7a-c392-2315-8be8-c943ebafd459" data-is-ix2-target="1" class="logo-black" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66bdf91fdd174c6bcc01dcce_logo%20dark.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-duration="0" data-loading="eager"></div></a><div class="nav-link-wrap nav-menu"><a internal-link="" href="/cases" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">Cases</div><div class="footer-nav-link hover">Cases</div></div></a><a internal-link="" href="/services" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">Service</div><div class="footer-nav-link hover">Service</div></div></a><a internal-link="" href="/blog" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">Blog</div><div class="footer-nav-link hover">Blog</div></div></a><a internal-link="" href="/about-us" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link nav">About us</div><div class="footer-nav-link hover">About us</div></div></a></div><div class="header-btn-wrap"><div class="nav_link-c contact grey"><div class="btn-text opacity-90">Book a call</div><div class="explode violet"></div><div class="book_a_call w-embed"><!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<a id="callButton" class="book_a_call" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vlad-outcrowd/introductory-call-outcrowd-team?hide_gdpr_banner=1'});return false;"></a>
+<!-- Calendly link widget end --></div></div><a internal-link="" href="/contact-us" class="nav_link-c contact w-inline-block"><div class="btn-text opacity-90">Contact</div><div class="explode violet"></div></a></div><div class="hide w-embed w-script"><script>
+document.querySelectorAll('.nav_link-c').forEach(button => {
+  const explode = button.querySelector('.explode');
+	const btnTxt = button.querySelector('.btn-text');
+
+  button.addEventListener('mousemove', (e) => {
+    const rect = button.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    explode.style.left = `${x}px`;
+    explode.style.top = `${y}px`;
+    explode.style.transform = 'scale(50)';
+    btnTxt.style.color = 'white';
+		
+  });
+
+  button.addEventListener('mouseleave', () => {
+    explode.style.transform = 'scale(.1)';
+    btnTxt.style.color = '';
+		
+  });
+});
+
+</script></div><div data-w-id="d854c265-bf21-cd91-d958-4207ee115060" class="burger-wrap"><div class="burger-line first"></div><div class="burger-line second"></div></div></nav><div class="mob-menu"><div class="zero-block"></div><div class="mob-nav-block"><a href="/cases" class="mob-nav-link">Cases</a><a href="/services" class="mob-nav-link">Service</a><a href="/blog" class="mob-nav-link">Blog</a><a href="/about-us" class="mob-nav-link">About us</a></div><div class="mob-social-block"><a href="mailto:hello@outcrowd.io" class="mail-link">hello@outcrowd.io</a><div class="social-link-list"><a href="#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f15171cfef875605c_dribbble-icon%201.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a60440bb21735987e1a061_Vector.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043fe2f6b52ee7d1d12a_ph_instagram-logo-fill.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f6f3bdb0490b33e85_Social%20Icons.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="#" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f8b939a6f0fde8e05_Vector-1.svg" loading="lazy" alt="" class="icon-footer set-3"/><div class="explode _400"></div></div></a><div class="hide w-embed w-script"><script>
+  document.querySelectorAll('.social-footer').forEach(button => {
+    const explode = button.querySelector('.explode');
+   
+
+    button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      explode.style.left = `${x}px`;
+      explode.style.top = `${y}px`;
+      explode.style.transform = 'scale(20)';
+      
+    });
+
+    button.addEventListener('mouseleave', () => {
+      explode.style.transform = 'scale(.1)';
+      
+    });
+  });
+
+</script></div></div><a href="/contact-us" class="nav_link-c contact mob w-inline-block"><div class="btn-text opacity-90">Contact</div><div class="explode violet"></div></a></div></div></div><div class="hide w-embed w-script"><style>
+  .nav-new {
+    transition: background-color 0.3s ease;
+  }
+
+  .logo-white, .logo-black {
+    transition: opacity 0.3s ease, z-index 0.3s ease;
+  }
+
+</style>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navNew = document.querySelector('.nav-new');
+    const logoWhite = document.querySelector('.logo-white');
+    const logoBlack = document.querySelector('.logo-black');
+    const sections = document.querySelectorAll('[section-color]');
+    const btn = document.querySelector('.nav_link-c.contact.grey');
+    const btnTxt = document.querySelector('.nav_link-c.contact.grey .btn-text.opacity-90');
+    const navTxt = document.querySelectorAll('.nav-new .footer-nav-link.hover');
+
+    function updateNavStyles() {
+      const navRect = navNew.getBoundingClientRect();
+      let sectionColor = 'white'; // По умолчанию
+
+      if (window.innerWidth > 767) {
+        // Проверка цвета секции только для больших экранов
+        sections.forEach(section => {
+          const sectionRect = section.getBoundingClientRect();
+          if (navRect.top >= sectionRect.top && navRect.bottom <= sectionRect.bottom) {
+            sectionColor = section.getAttribute('section-color');
+          }
+        });
+
+        if (sectionColor === 'black') {
+          navNew.style.backgroundColor = '#191919';
+        } else {
+          navNew.style.backgroundColor = '#FAFAFA';
+        }
+      }
+
+      // Применение стилей в зависимости от ширины экрана
+      if (window.innerWidth <= 767) {
+        // Проверка цвета секции для мобильных устройств
+        sections.forEach(section => {
+          const sectionRect = section.getBoundingClientRect();
+          if (navRect.top >= sectionRect.top && navRect.bottom <= sectionRect.bottom) {
+            sectionColor = section.getAttribute('section-color');
+          }
+        });
+
+        if (sectionColor === 'black') {
+          logoWhite.style.opacity = '100';
+          logoWhite.style.zIndex = '3';
+          logoBlack.style.opacity = '0';
+          logoBlack.style.zIndex = '2';
+        } else {
+          logoWhite.style.opacity = '0';
+          logoWhite.style.zIndex = '2';
+          logoBlack.style.opacity = '100';
+          logoBlack.style.zIndex = '3';
+        }
+      } else {
+        // Стили для больших экранов
+        if (sectionColor === 'black') {
+          logoWhite.style.opacity = '100';
+          logoWhite.style.zIndex = '3';
+          logoBlack.style.opacity = '0';
+          logoBlack.style.zIndex = '2';
+        } else {
+          logoWhite.style.opacity = '0';
+          logoWhite.style.zIndex = '2';
+          logoBlack.style.opacity = '100';
+          logoBlack.style.zIndex = '3';
+        }
+      }
+
+      // Обновление стилей кнопок и текста
+      if (sectionColor === 'black') {
+        btn.style.backgroundColor = '#404040';
+        btnTxt.style.color = '#fff';
+        navTxt.forEach(element => {
+          element.style.color = '#fff';
+        });
+      } else {
+        btn.style.backgroundColor = '#E5E5E5';
+        btnTxt.style.color = '#080808';
+        navTxt.forEach(element => {
+          element.style.color = '#080808';
+        });
+      }
+    }
+
+    // Запускаем проверку при загрузке страницы
+    updateNavStyles();
+
+    // Обновляем стили при прокрутке
+    window.addEventListener('scroll', updateNavStyles);
+
+    // Обновляем стили при изменении размера окна
+    window.addEventListener('resize', updateNavStyles);
+  });
+</script>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const burgerWrap = document.querySelector('.burger-wrap');
+    const logoWhite = document.querySelector('.logo-white');
+    const logoBlack = document.querySelector('.logo-black');
+
+    // Функция для переключения стилей
+    function toggleLogoStyles() {
+      const isActive = logoWhite.style.opacity === '100';
+
+      if (isActive) {
+        // Сброс стилей при втором клике
+        logoWhite.style.opacity = '';
+        logoWhite.style.zIndex = '';
+        logoBlack.style.opacity = '';
+        logoBlack.style.zIndex = '';
+      } else {
+        // Установка стилей при первом клике
+        logoWhite.style.opacity = '100';
+        logoWhite.style.zIndex = '3';
+        logoBlack.style.opacity = '0';
+        logoBlack.style.zIndex = '2';
+      }
+    }
+
+    // Привязка события клика к burgerWrap
+    burgerWrap.addEventListener('click', toggleLogoStyles);
+  });
+</script></div><div class="hide w-embed w-script"><script>
+let lastScrollTop = 0;
+
+document.addEventListener("scroll", () => {
+  const screenWidth = window.innerWidth;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (screenWidth > 767) {
+    if (scrollTop > lastScrollTop) {
+      // Скролл вниз
+      document.querySelector('.header-btn-wrap').style.transition = 'width 0.7s ease';
+      document.querySelector('.header-btn-wrap').style.width = '16rem';
+
+      document.querySelector('.nav-link-wrap').style.transition = 'transform 0.7s ease, width 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav-link-wrap').style.transform = 'scale(0.6)';
+      document.querySelector('.nav-link-wrap').style.width = '0rem';
+      document.querySelector('.nav-link-wrap').style.opacity = '0';
+
+      document.querySelector('.nav-new').style.transition = 'width 0.7s ease';
+      document.querySelector('.nav-new').style.width = '24rem';
+
+      document.querySelector('.nav_link-c.contact.grey').style.transition = 'transform 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav_link-c.contact.grey').style.transform = 'scale(1)';
+      document.querySelector('.nav_link-c.contact.grey').style.opacity = '1';
+    } else {
+      // Скролл вверх
+      document.querySelector('.header-btn-wrap').style.transition = 'width 0.7s ease';
+      document.querySelector('.header-btn-wrap').style.width = '7rem';
+
+      document.querySelector('.nav-link-wrap').style.transition = 'transform 0.7s ease, width 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav-link-wrap').style.transform = 'scale(1)';
+      document.querySelector('.nav-link-wrap').style.width = '20rem';
+      document.querySelector('.nav-link-wrap').style.opacity = '1';
+
+      document.querySelector('.nav-new').style.transition = 'width 0.7s ease';
+      document.querySelector('.nav-new').style.width = '41rem';
+
+      document.querySelector('.nav_link-c.contact.grey').style.transition = 'transform 0.7s ease, opacity 0.7s ease';
+      document.querySelector('.nav_link-c.contact.grey').style.transform = 'scale(0.6)';
+      document.querySelector('.nav_link-c.contact.grey').style.opacity = '0';
+    }
+
+    // Обновляем последнюю позицию скролла
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  }
+});
+
+</script></div></header><main class="main"><section class="section blog-article-hero"><div class="container"><h1 class="blog-article-heading">Dashboard: Creating a Smart Assistant</h1><div class="blog-article-subheading">Where to start with a dashboard and how to make the most of it</div><div class="date-author"><div class="date-author-article">Rick Mess</div><div class="date-author-article">February 4, 2021</div><div class="date-author-article slash">|</div></div><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41dd_61405b25b8db462b4b9e1282_601c135f2e386437c4e0849b_preview.webp" loading="lazy" alt="" class="article-main-img"/><div class="rich-blog-new w-richtext"><p>This information will be useful to anyone looking to create or redesign a dashboard.</p><p>***</p><p>No business can thrive without analytics, and for that you need a convenient tool. This is where the <strong>dashboard</strong> comes in — a useful panel for overseeing and streamlining your business.</p><p>Our clients commission dashboards for various tasks. We would like to clarify some key points which will also serve as a kind of FAQ. If you already have a dashboard, you can read this to see if it’s good enough. If you don’t, we’ll tell you how to create the best kind of dashboard.</p><h3>What makes a good dashboard?</h3><p>This isn’t a question you hear asked very often, which is a shame. The dashboard has some characteristic features that make it different from other digital products. A dashboard is an interface between an analytical engine and a user analyst. Its efficiency is not judged solely on the merits of its functionality and visuals. A good dashboard is a smart dashboard. It’s a logical extension of the human thinking process that doesn’t require any mental effort to be read.</p><p>A smart dashboard can interpret results and make recommendations. It displays the information that motivates action at the right moment.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><a target="_blank" href="https://dribbble.com/shots/14079434-Web-Application-Moneyboard"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41f7_61405b23321abc3eb614bf54_601c13a78b75ead6f41c5ad4_img2.webp"/></div></a><figcaption>Moneyboard</figcaption></figure><p>‍</p><h3>How to make your dashboard smart</h3><p>It’s not enough to find good developers and designers and explaining the task to them. Like it or not, what your dashboard will look like depends largely on you. Only you can gather the information that will turn your dashboard’s cogs.</p><p><em>Without your help your dashboard will not be smart enough!</em></p><p>What can you do to help? Sit back, grab a pen and paper (or their digital counterparts), and gather your thoughts. You need to compartmentalize all the info and write down the salient points. The time you spend is a hidden investment that will bring visible dividends later on.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><a target="_blank" href="https://dribbble.com/shots/14297149-Web-Application-Gold-Time"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41f8_61405b23dac302814625028e_601c1459d85b2b6381e8ead7_img3.webp"/></div></a><figcaption>Gold.Time</figcaption></figure><p>‍</p><h3>1. Define your dashboard’s goals</h3><p>The goals of your dashboards are not your goals or the goals of the dashboard’s future users. All this comes second.</p><p><em>First and foremost, a smart dashboard works toward the company’s goals.</em></p><p>Start with this thought, moving from the general to the particular and identifying the most immediate problems. A dashboard that solves insignificant or highly specific tasks is a dumb one. Using such a tool is like using a workout machine to build up one arm in the hopes of buffing up the whole body. Sounds absurd, doesn’t it? Alas, this approach is very common. If you want to make the most of your dashboard, keep the essentials front and center in your mind. This way you’ll make sure to remember all the important features without being distracted by the secondary ones, losing yourself in the details, and building up one arm.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41f6_61405b23321abc771114bf53_601c14a9b6726c0ecc5415f5_img4.webp"/></div></figure><p>‍</p><h3>2. Identify your dashboard’s tasks</h3><ul role="list"><li>What business tasks do you need your dashboard to perform?</li><li>Which performance indicators are the most applicable?</li><li>What is the purpose of monitoring data?</li></ul><p>Briefly write down the key points. This information will be used by the designers and developers to ensure the dashboard’s maximum functionality.</p><p>The specific type of tasks will help you identify the kind of dashboard you need:</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41fc_61405b23e54a364866ca7692_601c14cc802b70511519852e_img5.webp"/></div></figure><p>‍</p><h3>3. Compartmentalize and prioritize your tasks</h3><p>If you have a lot of tasks to perform, sort them out into categories and list them by priority. A good dashboard needs a clear hierarchy of goals and tasks. Make sure the designers understand these priorities — you don’t want them creating visuals based on general considerations. The more functions your dashboard has, the more important it is to have logical groupings and priorities.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><a target="_blank" href="https://dribbble.com/shots/14874468-Guide-Dashboard"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41fa_61405b2331850c502e387ca6_601c14f14e13cb5cdc3fdec3_img6.webp"/></div></a><figcaption>Guide — Dashboard</figcaption></figure><p>‍</p><h3>4. Define your target audience</h3><p>- Who is the dashboard for?</p><p>- Who will monitor the KPI and make decisions?</p><p>- Who will have access to it?</p><p>Toolbars should be tailored toward specific users and only display the data they need to work with. Different user groups or different goals may require several kinds of toolbars. Segment your audience if it is diverse and has different objectives.</p><p>The designers and developers should know as much as possible about your users to be able to suit their needs and minimize hassle while operating the dashboard.</p><p><em>“Will the dashboard be easy to use? Will it require additional instructions?”</em></p><p>Using your dashboard will be easy and enjoyable — as long as you provide the designers with sufficient info about your users and their tasks.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><a target="_blank" href="https://dribbble.com/shots/14473576-Web-App-Birma"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41f9_61405b24cbef745ab16e2388_601c156a277cc64971c33e88_img7.webp"/></div></a><figcaption>Birma</figcaption></figure><p>‍</p><h3>5. Identify data sources</h3><p>Where will the dashboard get the data for each user group? (For instance, a cloud service, a LAN, or an API.) In some cases, you’ll need real-time data, while other cases will require data from reports compiled for certain periods of time. Make sure to note this if it’s important for you.</p><p>Make a list of the required data sources.</p><h3>6. Make a draft layout</h3><p>You don’t need to be an artist and you don’t have to use any image editing software (unless you find it easier, of course).</p><p>Use your notes to decide what metrics will be displayed on your dashboard. Don’t overload the layout, show only the essentials — the stuff that needs to be readily accessible. Remember the 5-second rule: will the user be able to see all the important things at a glance in this time?</p><p>Drawing up a layout often gives you a new perspective on your tasks. It will also enable you to see the best ways of grouping data, as well as add or remove elements.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b4200_61405b24090a0c3334ec34c4_601c15a33f11491b38de1608_img8.webp"/></div></figure><p>‍</p><h3>7. Think about the visuals</h3><p>Metrics can be displayed as tables, widgets, graphs, diagrams, 3D projections. What kind of visualization suits your needs best? For example, monthly income is best represented by simple numbers; a leaderboard is a good way of motivating your team, and a line chart is great for showing changing trends over a time period.</p><p>The best criteria for choosing visualization are simplicity, readability, and clarity.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><a target="_blank" href="https://dribbble.com/shots/7332207-Web-Platform-R-E-Senior"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41fd_61405b246d5b904844080844_601c15d45add7b30baaaf6ce_img9.webp"/></div></a><figcaption>Web Platform — R.E. Senior</figcaption></figure><p>‍</p><p>Maybe you already have some ideas or you like the design of a particular dashboard. Provide the links to the examples you like, note the features you find useful. Good designers will always respect your vision and your wishes. Keep in mind, however, that any effective visualization must be tailored to the needs of the audience. The only way to ensure positive user experience is to be audience-oriented. That’s why the least effective dashboards are those that were copied off the competitors or made using templates.</p><h3>8. Think about adaptability</h3><p>Decide whether your dashboard needs an extended desktop version and a stripped-down mobile version. This depends on your tasks and your audience. A warehouse manager, for example, will mostly use a mobile phone, and they only need access to the operational KPI and metrics. But in-depth analysis will require indicators displayed on a big screen. Dashboards on mobile devices are better for keeping up with operational data. Strategic and analytical reports will need a desktop version.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><a target="_blank" href="https://dribbble.com/shots/9551899-Dashboard-CleanMac"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41fe_61405b241d718918241e4192_601c1610d85b2b4c28e8f052_img10.webp"/></div></a><figcaption>Dashboard — CleanMac</figcaption></figure><p>‍</p><h3>Redesigning, improving UI/UX</h3><p>Maybe you already have a dashboard and want to redesign it due to changes in business processes or the need to add or adjust some features. Before hiring designers, try to find out what difficulties your users face when using the dashboard and whether they have any qualms. The more info you can provide to the designers, the better your chances of getting a functional, convenient, and easy-to-use tool.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b41fb_61405b24ccd71e178c9e2b36_601c164ad330d73d6ac3ef3c_img11.webp"/></div></figure><p>‍</p><p>***</p><p>The preparations we have described are not there to make the designers’ work easier. They’re necessary to ensure you get exactly what you need to perform the tasks you need.</p><p>We are always happy when our clients know exactly what they need. But if you are unsure about something or only have a vague idea, it’s also not a problem. We can work it out through discussion and cooperation. Nevertheless, your ideas, your vision, and all the information you have gathered are an invaluable contribution to the project and a guarantee that your dashboard will be smart, useful, and convenient.</p><p>‍</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><a target="_blank" href="https://www.outcrowd.io/"><div><img loading="lazy" alt="" src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f3d/667a7576e7e7ef3ba89b415d_61405b18e54a360279ca768d_5fb621a4db29cca4ab978734_img9.png"/></div></a></figure></div><div class="form-block hhidden"><div class="form-heading">Innovate with us</div><div class="form-subheading">Our creative solutions have helped clients raise $100M+ and expand their reach.</div><div class="contact-form-wrapper"><form id="contactForm" class="contact-form"><div class="inputs-block"><div class="required-input-wrapper"><input type="text" id="nameInput" placeholder="Your Name" name="Name" class="input"/><div input-error="" class="input-error-message">Please fill in this field.</div></div><div class="required-input-wrapper"><input type="email" id="emailInput" placeholder="Email" name="Email" class="input"/><div input-error="" class="input-error-message">Please fill in this field.</div></div><select id="budgetInput" name="Budget" class="input select"><option value="Budget not defined">Budget not defined</option><option value="1">2-5k</option><option value="2">5-10k</option><option value="3">10-20k</option><option value="4">20-30k</option></select><textarea id="commentInput" placeholder="Message" name="Comment" class="input text-area"></textarea><div class="turnstile-embed w-embed"><div id="turnstile-container"></div></div></div><div class="utm-inputs"><input type="hidden" name="utm_source" id="utm_source" class="utm-input"/><input type="hidden" name="utm_medium" id="utm_medium" class="utm-input"/><input type="hidden" name="utm_campaign" id="utm_campaign" class="utm-input"/><input type="hidden" name="utm_term" id="utm_term" class="utm-input"/><input type="hidden" name="utm_content" id="utm_content" class="utm-input"/></div><button type="submit" class="submit-form">Submit</button></form><div class="form-js w-embed w-script"><script>
+  let captchaToken = "";
+
+  function onTurnstileCallback(token) {
+    captchaToken = token;
+    console.log("Captcha Token:", token);
+  }
+
+  function onTurnstileLoad() {
+    const container = document.getElementById("turnstile-container");
+    if (!container) {
+      console.error("Container Turnstile not found!");
+      return;
+    }
+
+    turnstile.render(container, {
+      sitekey: "0x4AAAAAABFkOkes0GAymTea",
+      callback: onTurnstileCallback
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const submitBtn = form.querySelector(".submit-form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let hasError = false;
+      const wrappers = form.querySelectorAll(".required-input-wrapper");
+
+      wrappers.forEach(wrapper => {
+        const input = wrapper.querySelector("input");
+        const errorBlock = wrapper.querySelector("[input-error]");
+
+        if (!input.value.trim()) {
+          errorBlock.style.display = "block";
+          hasError = true;
+        } else {
+          errorBlock.style.display = "none";
+        }
+      });
+
+      if (hasError) return;
+
+      if (!captchaToken) {
+        alert("Please confirm that you are not a bot.");
+        return;
+      }
+
+      const Name = document.getElementById("nameInput").value.trim();
+      const Email = document.getElementById("emailInput").value.trim();
+      const Budget = document.getElementById("budgetInput").value.trim();
+      const Comment = document.getElementById("commentInput").value.trim();
+
+      const utm_source = document.getElementById("utm_source")?.value || "";
+      const utm_medium = document.getElementById("utm_medium")?.value || "";
+      const utm_campaign = document.getElementById("utm_campaign")?.value || "";
+      const utm_term = document.getElementById("utm_term")?.value || "";
+      const utm_content = document.getElementById("utm_content")?.value || "";
+
+      submitBtn.textContent = "Please wait...";
+      submitBtn.disabled = true;
+
+      fetch("https://webflow-to-zoho.netlify.app/.netlify/functions/handle-webflow-deal", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          Name,
+          Email,
+          Budget,
+          Comment,
+          captchaToken,
+          utm_source,
+          utm_medium,
+          utm_campaign,
+          utm_term,
+          utm_content
+        })
+      })
+        .then(data => {
+          console.log("📨 Success Sending:", data);
+
+          localStorage.setItem("formData", JSON.stringify({
+            Name,
+            Email,
+            Budget,
+            Comment
+          }));
+
+          window.location.href = "/success";
+        })
+        .catch(err => {
+          console.error("Send Fail:", err);
+          alert("Sending error, try again.");
+          submitBtn.textContent = "Submit";
+          submitBtn.disabled = false;
+        });
+    });
+  });
+</script>
+
+<!-- Cloudflare Turnstile -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad" async defer></script></div></div></div></div></section></main><section section-color="black" data-w-id="505a594f-6be9-46a4-c000-a940fb77655c" class="section is-cta"><div class="container is-cta"><div data-w-id="87fb7b75-2f9f-4817-13e4-566ea0f8bfae" class="cta-wrap"><div data-w-id="f515b4c4-2fcd-4d20-0746-26efdc8bb300" class="cta-card-wrapper"><div class="cta-card"><div class="cta-left"><h2 class="cta-heading">Innovate with us</h2><div class="b1 grey text-ailng-left max-w-29">Our creative solutions have helped clients raise $100+ mln and expand their reach.</div><div class="cta-btn-wrap"><a internal-link="" href="/contact-us" class="nav_link-cta orange w-inline-block"><div class="bg-btn"><div class="btn-text">Write us</div></div><div class="explode violet"></div></a><div class="nav_link-cta violet"><div class="btn-text">Book a call</div><div class="explode violet"></div><div class="book_a_call w-embed"><!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<a id="callButton" class="book_a_call" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/outcrowd-digital-agency/introduction?hide_gdpr_banner=1'});return false;"></a>
+<!-- Calendly link widget end --></div><div class="hide w-embed w-script"><script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<script>
+  document.getElementById('callButton').addEventListener('click', function() {
+    document.getElementById('menuButton').click();
+  });
+</script></div></div></div></div><div class="cta-right"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66bf047f8e12e9868e4c8f45_dashboard-cta.svg" loading="lazy" alt="" class="cta-img"/></div></div><div class="stats-card-gradient _2"></div></div></div></div><div class="hide w-embed w-script"><script>
+  document.querySelectorAll('.nav_link-cta').forEach(button => {
+    const explode = button.querySelector('.explode');
+    const btnTxt2 = button.querySelector('.btn-text');
+
+
+    button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      explode.style.left = `${x}px`;
+      explode.style.top = `${y}px`;
+      explode.style.transform = 'scale(70)';
+      btnTxt2.style.color = '#fff'
+
+    });
+
+    button.addEventListener('mouseleave', () => {
+      explode.style.transform = 'scale(.1)';
+      btnTxt2.style.color = ''
+
+    });
+  });
+
+</script></div></section><footer section-color="black" class="footer"><div class="container is-footer"><div class="footer-main"><div class="nav-block"><div class="footer-col"><div class="footer-secondary-link-list"><a internal-link="" href="/cases" class="footer-link main w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link white">Cases</div><div class="footer-nav-link hover">Cases</div></div></a><a internal-link="" href="https://fitonist-app.webflow.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Fitonist</div><div class="footer-nav-link hover">Fitonist</div></div></a><a internal-link="" href="https://www.brainforest.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Brainforest</div><div class="footer-nav-link hover">Brainforest</div></div></a><a internal-link="" href="https://www.cybervergent.com/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Cybervergent</div><div class="footer-nav-link hover">Cybervergent</div></div></a><a internal-link="" href="https://nopan.webflow.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Nopan</div><div class="footer-nav-link hover">Nopan</div></div></a><a internal-link="" href="https://ramos-app.webflow.io/" target="_blank" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Ramos</div><div class="footer-nav-link hover">Ramos</div></div></a></div></div><div class="footer-col"><div class="footer-secondary-link-list"><a internal-link="" href="/services" class="footer-link main w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link white">Services</div><div class="footer-nav-link hover">Services</div></div></a><a internal-link="" href="#" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Complex solution</div><div class="footer-nav-link hover">Complex solution</div></div></a><a internal-link="" href="/branding-page" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Branding</div><div class="footer-nav-link hover">Branding</div></div></a><a internal-link="" href="/design-page" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Design</div><div class="footer-nav-link hover">Design</div></div></a><a internal-link="" href="/development-page" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Development</div><div class="footer-nav-link hover">Development</div></div></a></div></div><div class="footer-col"><div class="footer-secondary-link-list"><a internal-link="" href="/about-us" class="footer-link main w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link white">About us</div><div class="footer-nav-link hover">About us</div></div></a><a internal-link="" href="/about-us#numbers" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Numbers</div><div class="footer-nav-link hover">Numbers</div></div></a><a internal-link="" href="/about-us#mission" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Mission</div><div class="footer-nav-link hover">Mission</div></div></a><a internal-link="" href="/about-us#values" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Values</div><div class="footer-nav-link hover">Values</div></div></a><a internal-link="" href="/about-us#clients" class="footer-link w-inline-block"><div class="footer-flip-hover"><div class="footer-nav-link">Clients</div><div class="footer-nav-link hover">Clients</div></div></a></div></div></div><div class="links-block"><a href="mailto:hello@outcrowd.io" class="email-link">hello@outcrowd.io</a><div class="social-link-list is-footer"><a href="https://dribbble.com/outcrowd" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f15171cfef875605c_dribbble-icon%201.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="https://www.behance.net/outcrowd" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a60440bb21735987e1a061_Vector.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="https://www.instagram.com/outcrowdstudio/" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043fe2f6b52ee7d1d12a_ph_instagram-logo-fill.svg" loading="lazy" alt="" class="icon-footer set-2"/><div class="explode _400"></div></div></a><a href="https://x.com/outcrowdstudio" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f6f3bdb0490b33e85_Social%20Icons.svg" loading="lazy" alt="" class="icon-footer set-1"/><div class="explode _400"></div></div></a><a href="https://www.linkedin.com/company/outcrowd-network/?originalSubdomain=ua" target="_blank" class="social-footer-wrap w-inline-block"><div class="social-footer"><img src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/66a6043f8b939a6f0fde8e05_Vector-1.svg" loading="lazy" alt="" class="icon-footer set-3"/><div class="explode _400"></div></div></a><div class="hide w-embed w-script"><script>
+  document.querySelectorAll('.social-footer').forEach(button => {
+    const explode = button.querySelector('.explode');
+   
+
+    button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      explode.style.left = `${x}px`;
+      explode.style.top = `${y}px`;
+      explode.style.transform = 'scale(20)';
+      
+    });
+
+    button.addEventListener('mouseleave', () => {
+      explode.style.transform = 'scale(.1)';
+      
+    });
+  });
+
+</script></div><div class="hide w-embed w-script"><style>
+.email-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.0625rem;
+    background: currentColor;
+    will-change: transform;
+    transform-origin: 100% 100%;
+    transform: scaleX(0);
+    pointer-events: none;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-duration: .5s
+}
+
+.email-link:hover:after {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+.social-footer-wrap {
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+  }
+</style>
+
+<script>
+  const magnets2 = document.querySelectorAll('.social-footer-wrap');
+  const strength2 = 10; // Сила магнитного эффекта
+
+  magnets2.forEach(magnet => {
+    magnet.addEventListener('mousemove', (e) => {
+      const magnetRect = magnet.getBoundingClientRect();
+      const magnetX = magnetRect.left + magnetRect.width / 2;
+      const magnetY = magnetRect.top + magnetRect.height / 2;
+
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      const distX = (mouseX - magnetX) / magnetRect.width * strength2;
+      const distY = (mouseY - magnetY) / magnetRect.height * strength2;
+
+      magnet.style.transform = `translate(${distX}px, ${distY}px)`;
+    });
+
+    magnet.addEventListener('mouseleave', () => {
+      magnet.style.transform = 'translate(0, 0)';
+    });
+  });
+
+</script></div></div></div></div><div class="footer-bot"><div class="copy max-w-14">Copyright © 2025 Outcrowd Inc. All rights reserved.</div><div class="copy">Lewes - USA</div></div></div></footer><div class="w-embed"><style>
+  /* Animation of input when focus */
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { transition: .2s; }
+  input:-moz-placeholder, textarea:-moz-placeholder { transition: .2s; }
+  input::-moz-placeholder, textarea::-moz-placeholder { transition: .2s; }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholde { transition: .2s; }
+  input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholde { opacity: 0; }
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { opacity: 0; }
+  input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { opacity: 0; }
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { opacity: 0; }
+  /* Disabled display of border when focus on element */
+  *:focus { outline: 0; }
+  /* Make text look crisper and more legible in all browsers */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding-right: 0px !important;
+  }
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+  }
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+  /* Prevent all click and hover interaction with an element */
+  .pointer-events-off { pointer-events: none; }
+  /* Enables all click and hover interaction with an element */
+  .pointer-events-on { pointer-events: auto; }
+  /* Make sure containers never lose their center alignment */
+  .container-medium,.container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #080808 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #f5f5f5 inset !important;
+  background-color: #f5f5f5 !important;
+}
+
+  a,
+  .w-select,
+  .w-tab-link,
+  .w-nav-link,
+  .w-dropdown-btn,
+  .w-dropdown-toggle,
+  .w-dropdown-link {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+  }
+
+  /* Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  /* Adds inline flex display */
+  .display-inlineflex { display: inline-flex; }
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+  @media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+  }
+
+  /*Fluid responsive */
+  html { font-size: 1rem; }
+
+  @media screen and (min-width: 1920px) {
+    html { font-size: .6vw; }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1919px){
+    html { font-size: 1vw; }
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    html { font-size: 1vw; }
+  }
+
+.calendly-popup-close {
+z-index: 1000000;
+}
+</style></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=667a7576e7e7ef3ba89b3f2a" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/js/webflow.schunk.f2efb3c5440a81cf.js" type="text/javascript" integrity="sha384-VK02VJvMib7ytrF5M2joPWNtDQs366FZgEQ5B+Iwnjx0WBnwQXfootyziSYxdrmS" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/js/webflow.schunk.905be2c09f8db3a4.js" type="text/javascript" integrity="sha384-mqUlJQhtR8a7nNFps+RqZs1k7+X6tsn2Pp9rIAV0Yx6f9t9ew+1P6uleO33KqWFo" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/667a7576e7e7ef3ba89b3f2a/js/webflow.46ca6895.f3f60b4890b4e2cb.js" type="text/javascript" integrity="sha384-tpRiCi6mj3S5i61x3qTdqT9M+4j31H6+GaBlD/QhluVlzHpHXkpTXDsghtbnVtLA" crossorigin="anonymous"></script><script src='https://cdn.jsdelivr.net/gh/athlonstudio/webflow-lottie-lazy-loader@2.4/src/lottieLazyLoading.min.js'></script>
+<script src = "https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
+
+<script type="text/javascript">
+_linkedin_partner_id = "4907385";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+
+<script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4907385&fmt=gif" />
+</noscript>
+
+<script type="text/javascript" src='https://crm.zoho.eu/crm/javascript/zcga.js'></script>
+
+<script>
+  (function () {
+    const utmFields = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+
+    function storeUTMParams() {
+      const params = new URLSearchParams(window.location.search);
+      utmFields.forEach(field => {
+        const value = params.get(field);
+        if (value) {
+          localStorage.setItem(field, value);
+        }
+      });
+    }
+
+    function applyUTMParams() {
+      utmFields.forEach(field => {
+        const input = document.getElementById(field);
+        const stored = localStorage.getItem(field);
+        if (input && stored) {
+          input.value = stored;
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      storeUTMParams();
+      applyUTMParams();
+    });
+  })();
+</script>
+
+
+<!-- UTM Tracker -->
+<script>
+  (function () {
+    const utmFields = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+
+    function storeUTMParams() {
+      const params = new URLSearchParams(window.location.search);
+      utmFields.forEach(field => {
+        const value = params.get(field);
+        if (value) {
+          localStorage.setItem(field, value);
+        }
+      });
+    }
+
+    function applyUTMParams() {
+      utmFields.forEach(field => {
+        const input = document.getElementById(field);
+        const stored = localStorage.getItem(field);
+        if (input && stored) {
+          input.value = stored;
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      storeUTMParams();
+      applyUTMParams();
+    });
+  })();
+</script>
+<!-- End UTM Tracker --><script src = "https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"> </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const lenis = new Lenis({
+      lerp: 0.09,
+      smoothWheel: true,
+      wheelMultiplier: 0.7,
+      gestureOrientation: 'vertical',
+      normalizeWheel: false,
+      smoothTouch: false
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    // Сброс прокрутки при загрузке страницы
+    window.addEventListener('load', () => {
+      if (window.innerWidth > 767) {
+        setTimeout(() => {
+          lenis.scrollTo(0, {
+            immediate: true
+          });
+        }, 0);
+      }
+    });
+
+    // Управление Lenis с помощью кнопок
+    document.querySelectorAll("[data-lenis-start]").forEach(el => {
+      el.addEventListener("click", () => lenis.start());
+    });
+
+    document.querySelectorAll("[data-lenis-stop]").forEach(el => {
+      el.addEventListener("click", () => lenis.stop());
+    });
+
+    document.querySelectorAll("[data-lenis-toggle]").forEach(el => {
+      el.addEventListener("click", function() {
+        this.classList.toggle("stop-scroll");
+        if (this.classList.contains("stop-scroll")) {
+          lenis.stop();
+        } else {
+          lenis.start();
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+<!-- [Attributes by Finsweet] Custom Form Select -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-selectcustom@1/selectcustom.js"></script>
+
+<script>
+  function checkScaleAndSetOpacity() {
+    document.querySelectorAll('.explode').forEach(explode => {
+      // Получаем текущую трансформацию элемента
+      const transform = window.getComputedStyle(explode).transform;
+
+      if (transform !== 'none') {
+        // Извлекаем значение scale из матрицы трансформации
+        const matrixValues = transform.match(/matrix.*\((.+)\)/)[1].split(', ');
+        const scaleX = parseFloat(matrixValues[0]);
+
+        // Проверяем значение scale и устанавливаем opacity
+        if (scaleX <= 0.1) {
+          explode.style.opacity = '0';
+        } else {
+          explode.style.opacity = '1';
+        }
+      }
+    });
+  }
+
+  // Вызываем функцию для проверки при загрузке страницы и через определенные интервалы
+  window.addEventListener('load', checkScaleAndSetOpacity);
+  setInterval(checkScaleAndSetOpacity, 100); // Проверяем каждые 100 мс
+</script>
+
+<!-- Error Form -->
+<script>
+$('[wr-type="error"]').hide() // Hide errors
+$('.error').removeClass('error') // Remove error state from fields
+
+var formErrors = false
+
+const fieldError = function(field) {
+	field.parent().find('[wr-type="error"]').show() // Show error message
+  field.addClass('error') // Add error state to this field
+  formErrors = true
+}
+
+// Click on the Submit button
+$('[wr-type="submit"]').click(function() {
+  // Check each required field
+  $('[wr-type="required-field"]').each(function() {
+  	if ($(this).attr('type') === 'checkbox' && !$(this).is(':checked')) { // Checkbox
+    	fieldError($(this).siblings('.w-checkbox-input'))
+      return
+    }
+  	if ($(this).val().length === 0) { // If this field is empty
+    	fieldError($(this))
+    } else if ($(this).attr('type') === 'email' // Validation for email fields
+   	  && ( $(this).val().indexOf('@') === -1 || $(this).val().indexOf('.') === -1) ) {
+    		fieldError($(this))
+    }
+  })
+  // Submit parent form if there are no errors
+  if (!formErrors) $(this).parents('form').submit()
+})
+
+// Remove errors from field
+$('[wr-type="required-field"], [type="checkbox"]').on('keypress blur', function() {
+	$(this).parent().find('.error').removeClass('error')
+	$(this).parent().find('[wr-type="error"]').hide()
+  formErrors = false
+})
+
+// Press Enter
+$('input, textarea').keypress(function(e) { 
+  if (e.keyCode == 13) {
+    e.preventDefault()
+    $(this).trigger("change")
+    $('[wr-type="submit"]').click()
+  }
+})
+</script>
+<!-- End Error Form --></body></html>

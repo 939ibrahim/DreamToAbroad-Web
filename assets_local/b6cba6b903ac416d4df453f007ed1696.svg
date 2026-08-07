@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="5.05051515%" y1="3.53535354%" x2="115.656566%" y2="124.747475%" id="linearGradient-1">
+            <stop stop-color="#595959" offset="0%"></stop>
+            <stop stop-color="#595959" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.4961054%" id="linearGradient-2">
+            <stop stop-color="#141414" offset="0%"></stop>
+            <stop stop-color="#6A2E87" offset="45.2202217%"></stop>
+            <stop stop-color="#141414" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.4961054%" id="linearGradient-3">
+            <stop stop-color="#141414" offset="0%"></stop>
+            <stop stop-color="#6A2E87" offset="45.2202217%"></stop>
+            <stop stop-color="#141414" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="53.1458458%" x2="86.2644737%" y2="53.8761307%" id="linearGradient-4">
+            <stop stop-color="#819CFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FE7FB6" stop-opacity="0.88" offset="25%"></stop>
+            <stop stop-color="#FF97DD" offset="50.9477%"></stop>
+            <stop stop-color="#FE7FB6" stop-opacity="0.88" offset="71.3576%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="19.6358934%" y1="21.1733782%" x2="120.717075%" y2="123.994835%" id="linearGradient-5">
+            <stop stop-color="#FF80B3" offset="0%"></stop>
+            <stop stop-color="#F53B86" offset="36.8695%"></stop>
+            <stop stop-color="#6C45BF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.9755375%" y1="22.9984467%" x2="119.197552%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFA4C8" offset="0%"></stop>
+            <stop stop-color="#FB8BD0" offset="28.125%"></stop>
+            <stop stop-color="#DBB6F8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Rectangle" fill="#141414" fill-rule="nonzero" x="0" y="0" width="100" height="100" rx="18"></rect>
+            <rect id="Rectangle" stroke="url(#linearGradient-1)" x="0.5" y="0.5" width="99" height="99" rx="17.5"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-2)" x="54" y="24" width="1" height="58"></rect>
+            <rect id="Rectangle-Copy" fill="url(#linearGradient-3)" x="74" y="30" width="1" height="45"></rect>
+            <rect id="Rectangle-Copy-2" fill="url(#linearGradient-3)" x="34" y="31" width="1" height="45"></rect>
+            <path d="M93,66 C88.5,65.25 86,58.5 82,58.5 C77,58.5 76.5,62 72,62 C64.5,62 65.3064,42.8534 53.5,45 C48,46 46.5,55.5 41,55.5 C36.5,55.8069 34,51.75 29.5,51.75 C22,51.75 21.5,63 17,65.25" id="Path" stroke="url(#linearGradient-4)"></path>
+            <g transform="translate(51.000000, 42.000000)" id="Oval">
+                <circle fill="url(#linearGradient-5)" fill-rule="nonzero" transform="translate(3.500000, 3.500000) scale(-1, 1) rotate(89.999997) translate(-3.500000, -3.500000) " cx="3.50000015" cy="3.50000015" r="3.5"></circle>
+                <circle stroke="url(#linearGradient-6)" stroke-width="0.5" transform="translate(3.500000, 3.500000) scale(-1, 1) rotate(89.999997) translate(-3.500000, -3.500000) " cx="3.50000004" cy="3.5" r="3.20833319"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
