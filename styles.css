@@ -35,14 +35,16 @@ body{
 .nav-link.is-active, .nav-link:hover{color:var(--brand-blue);background:rgba(88,166,255,0.08)}
 .nav-link.is-active::after, .nav-link:hover::after{transform:scaleX(1)}
 .nav .cta{padding:8px 14px;border-radius:24px;background:var(--brand-blue);color:#fff}
-.contact-menu-wrapper{position:relative}
-.contact-quick-menu{position:absolute;right:0;top:calc(100% + 12px);display:flex;flex-direction:column;gap:12px;min-width:260px;padding:14px;border-radius:18px;background:rgba(13,18,34,0.92);box-shadow:0 22px 50px rgba(9,12,18,0.35);opacity:0;visibility:hidden;transform:translateY(-8px) scale(.98);transition:opacity .28s ease, transform .28s ease, visibility .28s ease;z-index:120}
-.contact-quick-menu.is-open{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
-.contact-option{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:12px 14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:#fff;border-radius:12px;cursor:pointer;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease}
-.contact-option:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(88,166,255,0.18);border-color:rgba(88,166,255,0.7)}
-.option-label{flex:1;text-align:left}
-.option-lottie-wrap{display:flex;align-items:center;justify-content:center;min-width:48px}
-.option-lottie-wrap dotlottie-wc{display:block;width:48px;height:48px}
+.contact-menu-wrapper{position:relative;display:flex;align-items:center;justify-content:flex-end}
+.contact-quick-menu{position:absolute;right:0;top:calc(100% + 12px);display:flex;flex-direction:column;gap:12px;min-width:0;width:0;max-width:0;padding:0;border-radius:20px;background:rgba(13,18,34,0.92);box-shadow:0 22px 50px rgba(9,12,18,0.35);opacity:0;visibility:hidden;overflow:hidden;transform:translateY(-8px) scale(.98);transition:width .35s ease, opacity .28s ease, transform .28s ease, visibility .28s ease, padding .35s ease;z-index:120}
+.contact-menu-wrapper.is-open .contact-quick-menu{width:290px;max-width:290px;opacity:1;visibility:visible;padding:14px;transform:translateY(0) scale(1)}
+.contact-option{display:flex;align-items:center;justify-content:flex-start;gap:12px;width:100%;padding:12px 14px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(135deg, rgba(17,24,39,0.96), rgba(34,39,53,0.94));color:#fff;border-radius:999px;cursor:pointer;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease}
+.contact-option:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(125,211,252,0.18);border-color:rgba(125,211,252,0.9);background:linear-gradient(135deg, rgba(15,23,42,0.98), rgba(17,24,39,0.98))}
+.option-label{flex:1;text-align:left;white-space:nowrap}
+.option-lottie-wrap{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg, rgba(110,231,183,0.95), rgba(34,197,94,0.8));box-shadow:0 8px 18px rgba(52,211,153,0.35);flex-shrink:0}
+.option-lottie-wrap dotlottie-wc{display:block;width:26px;height:26px}
+.contact-trigger{min-width:168px}
+.contact-trigger.is-open{background:linear-gradient(135deg, rgba(96,165,250,0.25), rgba(59,130,246,0.15));border-color:rgba(125,211,252,0.7);box-shadow:0 12px 26px rgba(56,189,248,0.12)}
 .nav-toggle{display:none;border:0;background:transparent;font-size:20px;cursor:pointer;position:relative;width:42px;height:42px;padding:0;align-items:center;justify-content:center;z-index:70}
 .nav-toggle-line{position:absolute;left:50%;width:22px;height:2px;border-radius:999px;background:var(--brand-blue);transform:translateX(-50%);transition:transform .3s ease, opacity .3s ease, top .3s ease}
 .nav-toggle-line-1{top:14px}
@@ -61,17 +63,17 @@ body{
 
 /* Buttons: blur transparent background with light blue */
 .button, .nav .cta, .tile-cta, .button-ghost, .button-secondary, .primary-ghost, .fancy-6 {
-  border-radius:999px;padding:12px 20px;font-weight:700;border:1px solid rgba(0,0,0,0.06);cursor:pointer;background:var(--brand-blue-10);backdrop-filter:blur(6px);color:var(--dark-black-900);position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:180px;text-decoration:none;transition:transform .25s ease, box-shadow .25s ease, background .25s ease, background-position .3s ease, background-size .3s ease;color:var(--dark-black-900)}
+  border-radius:999px;padding:12px 20px;font-weight:700;border:1px solid rgba(0,0,0,0.06);cursor:pointer;background:var(--brand-blue-10);backdrop-filter:blur(6px);color:var(--dark-black-900);position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:180px;text-decoration:none;transition:transform .25s ease, box-shadow .25s ease, background .25s ease, background-position .3s ease, background-size .3s ease,color .25s ease}
 .button, .button-ghost, .tile-cta, .primary-ghost, .nav .cta, .button-secondary{background:
   radial-gradient(farthest-side,#000 98%,#0000) -1.4em 0/1.4em 1.4em,
   linear-gradient(90deg, rgba(88,166,255,0.18) calc(100% - 0.7em), rgba(255,255,255,0) 0) left/0% 100%;
   background-repeat:no-repeat;
 }
 .button:hover, .nav .cta:hover, .tile-cta:hover, .button-ghost:hover, .button-secondary:hover, .primary-ghost:hover, .fancy-6:hover {
-  color:#fff;
+  color:#7dd3fc;
   background-size:1.4em 1.4em,100% 100%;
   background-position:right,left;
-  transform:translateY(-3px);box-shadow:0 12px 24px rgba(88,166,255,0.18)}
+  transform:translateY(-3px);box-shadow:0 12px 24px rgba(125,211,252,0.2)}
 .button.secondary, .button-secondary{background:transparent;border:1px solid rgba(0,0,0,0.06)}
 .button.large{padding:14px 22px;font-size:1.05rem;border-radius:12px}
 .button.primary-ghost{background:linear-gradient(180deg,var(--brand-blue-10),rgba(255,255,255,0.02));border:1px solid var(--brand-blue-40);color:var(--dark-black-900)}
@@ -88,9 +90,21 @@ body{
   transition: 0.3s ;
 }
 .fancy-6:hover {
-  color:#fff;
+  color:#7dd3fc;
   background-size: 1.4em 1.4em,100% 100%;
   background-position: right,left;
+}
+.contact-trigger:hover,
+.contact-option:hover,
+.nav .cta:hover,
+.button:hover,
+.tile-cta:hover,
+.button-ghost:hover,
+.button-secondary:hover,
+.primary-ghost:hover,
+.fancy-6:hover {
+  color:#7dd3fc !important;
+  border-color:rgba(125,211,252,0.7) !important;
 }
 
 .animated-button{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;min-width:180px;cursor:pointer;isolation:isolate}

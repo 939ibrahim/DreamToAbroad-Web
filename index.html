@@ -32,16 +32,16 @@
           </button>
           <div id="contactQuickMenu" class="contact-quick-menu" role="menu" aria-label="Contact options">
             <button type="button" class="contact-option fancy-6" data-action="meeting" data-url="https://zoom.us/j/1234567890?pwd=DreamToAbroad" role="menuitem">
-              <span class="option-label">BOOK A MEETING</span>
               <span class="option-lottie-wrap">
-                <dotlottie-wc src="https://lottie.host/48bb8042-d7e1-4f45-8767-6807ef219ab3/WvO0sicBfL.lottie" stateMachineId="StateMachine2" style="width: 48px;height: 48px"></dotlottie-wc>
+                <dotlottie-wc src="https://lottie.host/48bb8042-d7e1-4f45-8767-6807ef219ab3/WvO0sicBfL.lottie" stateMachineId="StateMachine2" style="width: 26px;height: 26px"></dotlottie-wc>
               </span>
+              <span class="option-label">Book a meeting</span>
             </button>
             <button type="button" class="contact-option fancy-6" data-action="call" data-url="https://wa.me/923193421939?text=Hi%20Dream%20To%20Abroad%2C%20I%20want%20to%20book%20a%20call." role="menuitem">
-              <span class="option-label">CALL NOW</span>
               <span class="option-lottie-wrap">
-                <dotlottie-wc src="https://lottie.host/48bb8042-d7e1-4f45-8767-6807ef219ab3/WvO0sicBfL.lottie" stateMachineId="StateMachine2" style="width: 48px;height: 48px"></dotlottie-wc>
+                <dotlottie-wc src="https://lottie.host/48bb8042-d7e1-4f45-8767-6807ef219ab3/WvO0sicBfL.lottie" stateMachineId="StateMachine2" style="width: 26px;height: 26px"></dotlottie-wc>
               </span>
+              <span class="option-label">Call now</span>
             </button>
           </div>
         </div>
@@ -416,23 +416,27 @@ navLinks.forEach((link) => {
 
 const contactTrigger = document.querySelector('.contact-trigger');
 const contactMenu = document.getElementById('contactQuickMenu');
+const contactWrapper = document.querySelector('.contact-menu-wrapper');
 const closeContactMenu = () => {
-  if (!contactTrigger || !contactMenu) return;
+  if (!contactTrigger || !contactMenu || !contactWrapper) return;
   contactTrigger.classList.remove('is-open');
   contactMenu.classList.remove('is-open');
+  contactWrapper.classList.remove('is-open');
   contactTrigger.setAttribute('aria-expanded', 'false');
 };
 
-if (contactTrigger && contactMenu) {
+if (contactTrigger && contactMenu && contactWrapper) {
   contactTrigger.addEventListener('click', (event) => {
     event.stopPropagation();
-    const isOpen = contactTrigger.classList.toggle('is-open');
+    const isOpen = contactWrapper.classList.toggle('is-open');
+    contactTrigger.classList.toggle('is-open', isOpen);
     contactMenu.classList.toggle('is-open', isOpen);
     contactTrigger.setAttribute('aria-expanded', String(isOpen));
   });
 
   document.addEventListener('click', (event) => {
-    if (!contactTrigger.contains(event.target) && !contactMenu.contains(event.target)) {
+    const target = event.target;
+    if (!target || (!contactTrigger.contains(target) && !contactMenu.contains(target) && !contactWrapper.contains(target))) {
       closeContactMenu();
     }
   });
@@ -445,11 +449,7 @@ const redirectWithAnimation = (button, url) => {
     button.classList.remove('is-animating');
     if (url) {
       window.__lastRedirectTarget = url;
-      if (url.startsWith('https://wa.me/') || url.startsWith('https://api.whatsapp.com/')) {
-        window.open(url, '_blank', 'noopener');
-      } else {
-        window.open(url, '_blank', 'noopener');
-      }
+      window.open(url, '_blank', 'noopener');
     }
   }, 850);
   button.dataset.redirectTimer = String(timer);
