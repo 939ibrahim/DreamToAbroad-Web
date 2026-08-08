@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dream To Abroad — Study in Italy & Germany</title>
   <meta name="description" content="Dream To Abroad — specialist consultancy for study in Italy & Germany. University applications, CV & motivation letters, visa guidance." />
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js" type="module"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,16 +15,36 @@
         <img src="brand_assets/logo.png" alt="Dream To Abroad" class="brand-mark" style="height:48px;" onerror="this.style.display='none'" />
         <div style="font-weight:800;">Dream To Abroad</div>
       </div>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+        <span class="nav-toggle-line nav-toggle-line-1"></span>
+        <span class="nav-toggle-line nav-toggle-line-2"></span>
+        <span class="nav-toggle-line nav-toggle-line-3"></span>
+      </button>
       <nav class="nav">
         <a href="#services" class="nav-link is-active">Services</a>
         <a href="#packages" class="nav-link">Packages</a>
         <a href="#youtube" class="nav-link">Videos</a>
-        <a href="https://wa.me/923193421939" class="cta animated-button" target="_blank" rel="noopener">
-          <span class="btn-label">Contact us</span>
-          <span class="progress-bar"></span>
-          <svg viewBox="0 0 25 30" aria-hidden="true"><path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2" class="checkmark-path"/></svg>
-        </a>
+        <div class="contact-menu-wrapper">
+          <button type="button" class="cta animated-button contact-trigger fancy-6" aria-expanded="false" aria-controls="contactQuickMenu">
+            <span class="btn-label">Contact us</span>
+            <span class="progress-bar"></span>
+            <svg viewBox="0 0 25 30" aria-hidden="true"><path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2" class="checkmark-path"/></svg>
+          </button>
+          <div id="contactQuickMenu" class="contact-quick-menu" role="menu" aria-label="Contact options">
+            <button type="button" class="contact-option fancy-6" data-action="meeting" data-url="https://zoom.us/j/1234567890?pwd=DreamToAbroad" role="menuitem">
+              <span class="option-label">BOOK A MEETING</span>
+              <span class="option-lottie-wrap">
+                <dotlottie-wc src="https://lottie.host/48bb8042-d7e1-4f45-8767-6807ef219ab3/WvO0sicBfL.lottie" stateMachineId="StateMachine2" style="width: 48px;height: 48px"></dotlottie-wc>
+              </span>
+            </button>
+            <button type="button" class="contact-option fancy-6" data-action="call" data-url="https://wa.me/923193421939?text=Hi%20Dream%20To%20Abroad%2C%20I%20want%20to%20book%20a%20call." role="menuitem">
+              <span class="option-label">CALL NOW</span>
+              <span class="option-lottie-wrap">
+                <dotlottie-wc src="https://lottie.host/48bb8042-d7e1-4f45-8767-6807ef219ab3/WvO0sicBfL.lottie" stateMachineId="StateMachine2" style="width: 48px;height: 48px"></dotlottie-wc>
+              </span>
+            </button>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -390,6 +411,55 @@ navLinks.forEach((link) => {
       document.body.classList.remove('nav-open');
       navToggle && navToggle.setAttribute('aria-expanded', 'false');
     }
+  });
+});
+
+const contactTrigger = document.querySelector('.contact-trigger');
+const contactMenu = document.getElementById('contactQuickMenu');
+const closeContactMenu = () => {
+  if (!contactTrigger || !contactMenu) return;
+  contactTrigger.classList.remove('is-open');
+  contactMenu.classList.remove('is-open');
+  contactTrigger.setAttribute('aria-expanded', 'false');
+};
+
+if (contactTrigger && contactMenu) {
+  contactTrigger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const isOpen = contactTrigger.classList.toggle('is-open');
+    contactMenu.classList.toggle('is-open', isOpen);
+    contactTrigger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!contactTrigger.contains(event.target) && !contactMenu.contains(event.target)) {
+      closeContactMenu();
+    }
+  });
+}
+
+const redirectWithAnimation = (button, url) => {
+  if (!button) return;
+  button.classList.add('is-animating');
+  const timer = setTimeout(() => {
+    button.classList.remove('is-animating');
+    if (url) {
+      window.__lastRedirectTarget = url;
+      if (url.startsWith('https://wa.me/') || url.startsWith('https://api.whatsapp.com/')) {
+        window.open(url, '_blank', 'noopener');
+      } else {
+        window.open(url, '_blank', 'noopener');
+      }
+    }
+  }, 850);
+  button.dataset.redirectTimer = String(timer);
+};
+
+document.querySelectorAll('.contact-option').forEach((option) => {
+  option.addEventListener('click', () => {
+    const url = option.dataset.url || '';
+    redirectWithAnimation(option, url);
+    closeContactMenu();
   });
 });
 

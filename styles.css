@@ -35,7 +35,19 @@ body{
 .nav-link.is-active, .nav-link:hover{color:var(--brand-blue);background:rgba(88,166,255,0.08)}
 .nav-link.is-active::after, .nav-link:hover::after{transform:scaleX(1)}
 .nav .cta{padding:8px 14px;border-radius:24px;background:var(--brand-blue);color:#fff}
-.nav-toggle{display:none;border:0;background:transparent;font-size:20px;cursor:pointer}
+.contact-menu-wrapper{position:relative}
+.contact-quick-menu{position:absolute;right:0;top:calc(100% + 12px);display:flex;flex-direction:column;gap:12px;min-width:260px;padding:14px;border-radius:18px;background:rgba(13,18,34,0.92);box-shadow:0 22px 50px rgba(9,12,18,0.35);opacity:0;visibility:hidden;transform:translateY(-8px) scale(.98);transition:opacity .28s ease, transform .28s ease, visibility .28s ease;z-index:120}
+.contact-quick-menu.is-open{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
+.contact-option{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:12px 14px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:#fff;border-radius:12px;cursor:pointer;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease}
+.contact-option:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(88,166,255,0.18);border-color:rgba(88,166,255,0.7)}
+.option-label{flex:1;text-align:left}
+.option-lottie-wrap{display:flex;align-items:center;justify-content:center;min-width:48px}
+.option-lottie-wrap dotlottie-wc{display:block;width:48px;height:48px}
+.nav-toggle{display:none;border:0;background:transparent;font-size:20px;cursor:pointer;position:relative;width:42px;height:42px;padding:0;align-items:center;justify-content:center;z-index:70}
+.nav-toggle-line{position:absolute;left:50%;width:22px;height:2px;border-radius:999px;background:var(--brand-blue);transform:translateX(-50%);transition:transform .3s ease, opacity .3s ease, top .3s ease}
+.nav-toggle-line-1{top:14px}
+.nav-toggle-line-2{top:20px}
+.nav-toggle-line-3{top:26px}
 .form-status{min-height:28px;margin-top:8px;font-weight:700}
 
 /* Hero */
@@ -48,13 +60,38 @@ body{
 .hero-cta{margin-top:20px;display:flex;gap:12px}
 
 /* Buttons: blur transparent background with light blue */
-.button{border-radius:999px;padding:12px 20px;font-weight:700;border:1px solid rgba(0,0,0,0.06);cursor:pointer;background:var(--brand-blue-10);backdrop-filter:blur(6px);color:var(--dark-black-900);position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:180px;text-decoration:none;transition:transform .25s ease, box-shadow .25s ease, background .25s ease}
-.button:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(88,166,255,0.18)}
+.button, .nav .cta, .tile-cta, .button-ghost, .button-secondary, .primary-ghost, .fancy-6 {
+  border-radius:999px;padding:12px 20px;font-weight:700;border:1px solid rgba(0,0,0,0.06);cursor:pointer;background:var(--brand-blue-10);backdrop-filter:blur(6px);color:var(--dark-black-900);position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:180px;text-decoration:none;transition:transform .25s ease, box-shadow .25s ease, background .25s ease, background-position .3s ease, background-size .3s ease;color:var(--dark-black-900)}
+.button, .button-ghost, .tile-cta, .primary-ghost, .nav .cta, .button-secondary{background:
+  radial-gradient(farthest-side,#000 98%,#0000) -1.4em 0/1.4em 1.4em,
+  linear-gradient(90deg, rgba(88,166,255,0.18) calc(100% - 0.7em), rgba(255,255,255,0) 0) left/0% 100%;
+  background-repeat:no-repeat;
+}
+.button:hover, .nav .cta:hover, .tile-cta:hover, .button-ghost:hover, .button-secondary:hover, .primary-ghost:hover, .fancy-6:hover {
+  color:#fff;
+  background-size:1.4em 1.4em,100% 100%;
+  background-position:right,left;
+  transform:translateY(-3px);box-shadow:0 12px 24px rgba(88,166,255,0.18)}
 .button.secondary, .button-secondary{background:transparent;border:1px solid rgba(0,0,0,0.06)}
 .button.large{padding:14px 22px;font-size:1.05rem;border-radius:12px}
 .button.primary-ghost{background:linear-gradient(180deg,var(--brand-blue-10),rgba(255,255,255,0.02));border:1px solid var(--brand-blue-40);color:var(--dark-black-900)}
 .button-ghost{background:transparent;border:1px solid rgba(0,0,0,0.06)}
 .direct-email-btn{margin-top:18px}
+.fancy-6 {
+  padding: 0 10px;
+  line-height: 1.4em;
+  border-radius: 50px;
+  background:
+     radial-gradient(farthest-side,#000 98%,#0000) -1.4em 0/1.4em 1.4em,
+     linear-gradient(90deg, #000 calc(100% - 0.7em),#0000 0) left/0% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s ;
+}
+.fancy-6:hover {
+  color:#fff;
+  background-size: 1.4em 1.4em,100% 100%;
+  background-position: right,left;
+}
 
 .animated-button{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;min-width:180px;cursor:pointer;isolation:isolate}
 .animated-button .btn-label{position:relative;z-index:2;display:inline-block;transition:opacity .2s ease}
@@ -161,10 +198,13 @@ section.in-view{opacity:1;transform:none}
   /* Mobile header/nav */
   .nav{display:flex;position:absolute;right:18px;top:64px;background:rgba(255,255,255,0.98);border-radius:16px;padding:12px;flex-direction:column;box-shadow:0 8px 22px rgba(0,0,0,0.08);max-height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(-10px);transition:max-height .35s ease, opacity .25s ease, transform .25s ease}
   .nav a{display:block;padding:10px 12px}
-  .nav-toggle{display:block;background:transparent;border:0;font-size:20px}
-  body.nav-open .nav{max-height:320px;opacity:1;pointer-events:auto;transform:translateY(0)}
+  .nav-toggle{display:flex;background:transparent;border:0;font-size:20px}
+  body.nav-open .nav{max-height:420px;opacity:1;pointer-events:auto;transform:translateY(0)}
   body.nav-open .nav-link{opacity:1;transform:none}
   .nav-link{opacity:0;transform:translateY(-10px);transition:opacity .2s ease, transform .2s ease}
+  body.nav-open .nav-toggle-line-1{top:20px;transform:translateX(-50%) rotate(45deg)}
+  body.nav-open .nav-toggle-line-2{opacity:0}
+  body.nav-open .nav-toggle-line-3{top:20px;transform:translateX(-50%) rotate(-45deg)}
 
   /* Make hero CTAs full width on small screens */
   .hero-cta{flex-direction:column}
