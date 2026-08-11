@@ -36,7 +36,7 @@ body{
 .nav-link.is-active::after, .nav-link:hover::after{transform:scaleX(1)}
 .nav .cta{padding:8px 14px;border-radius:24px;background:var(--brand-blue);color:#fff}
 .contact-menu-wrapper{position:relative;display:flex;align-items:center;justify-content:flex-end}
-.contact-quick-menu{position:absolute;right:0;top:calc(100% + 12px);display:flex;flex-direction:column;gap:12px;min-width:0;width:0;max-width:0;padding:0;border-radius:20px;background:rgba(13,18,34,0.92);box-shadow:0 22px 50px rgba(9,12,18,0.35);opacity:0;visibility:hidden;overflow:hidden;transform:translateY(-8px) scale(.98);transition:width .35s ease, opacity .28s ease, transform .28s ease, visibility .28s ease, padding .35s ease;z-index:120}
+.contact-quick-menu{position:absolute;right:0;top:calc(100% + 12px);display:flex;flex-direction:column;gap:12px;min-width:0;width:0;max-width:0;padding:0;border-radius:20px;background:rgba(13,18,34,0.92);box-shadow:0 22px 50px rgba(9,12,18,0.35);opacity:0;visibility:hidden;overflow:hidden;transform:translateY(-8px) scale(.98);transition:width .35s ease, opacity .28s ease, transform .35s ease, visibility .35s ease, padding .35s ease;z-index:120}
 .contact-menu-wrapper.is-open .contact-quick-menu{width:290px;max-width:290px;opacity:1;visibility:visible;padding:14px;transform:translateY(0) scale(1)}
 .contact-option{display:flex;align-items:center;justify-content:flex-start;gap:12px;width:100%;padding:12px 14px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(135deg, rgba(17,24,39,0.96), rgba(34,39,53,0.94));color:#fff;border-radius:999px;cursor:pointer;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease}
 .contact-option:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(125,211,252,0.18);border-color:rgba(125,211,252,0.9);background:linear-gradient(135deg, rgba(15,23,42,0.98), rgba(17,24,39,0.98))}
@@ -45,6 +45,7 @@ body{
 .option-lottie-wrap dotlottie-wc{display:block;width:26px;height:26px}
 .contact-trigger{min-width:168px}
 .contact-trigger.is-open{background:linear-gradient(135deg, rgba(96,165,250,0.25), rgba(59,130,246,0.15));border-color:rgba(125,211,252,0.7);box-shadow:0 12px 26px rgba(56,189,248,0.12)}
+.contact-trigger.is-open .btn-label{color:#7dd3fc}
 .nav-toggle{display:none;border:0;background:transparent;font-size:20px;cursor:pointer;position:relative;width:42px;height:42px;padding:0;align-items:center;justify-content:center;z-index:70}
 .nav-toggle-line{position:absolute;left:50%;width:22px;height:2px;border-radius:999px;background:var(--brand-blue);transform:translateX(-50%);transition:transform .3s ease, opacity .3s ease, top .3s ease}
 .nav-toggle-line-1{top:14px}
@@ -210,15 +211,22 @@ section.in-view{opacity:1;transform:none}
   .contact-title{font-size:40px}
 
   /* Mobile header/nav */
-  .nav{display:flex;position:absolute;right:18px;top:64px;background:rgba(255,255,255,0.98);border-radius:16px;padding:12px;flex-direction:column;box-shadow:0 8px 22px rgba(0,0,0,0.08);max-height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(-10px);transition:max-height .35s ease, opacity .25s ease, transform .25s ease}
+  .header-inner{position:relative;z-index:1}
+  .nav{display:flex;position:absolute;right:18px;top:64px;z-index:30;background:rgba(255,255,255,0.98);border-radius:16px;padding:12px;flex-direction:column;box-shadow:0 8px 22px rgba(0,0,0,0.08);max-height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(-10px);transition:max-height .35s ease, opacity .25s ease, transform .25s ease}
   .nav a{display:block;padding:10px 12px}
-  .nav-toggle{display:flex;background:transparent;border:0;font-size:20px}
-  body.nav-open .nav{max-height:420px;opacity:1;pointer-events:auto;transform:translateY(0)}
+  .nav-toggle{display:flex;background:transparent;border:0;font-size:20px;z-index:40}
+  body.nav-open .nav,
+  .nav.is-open{max-height:1200px !important;opacity:1 !important;pointer-events:auto !important;transform:translateY(0) !important;overflow:visible !important}
   body.nav-open .nav-link{opacity:1;transform:none}
   .nav-link{opacity:0;transform:translateY(-10px);transition:opacity .2s ease, transform .2s ease}
   body.nav-open .nav-toggle-line-1{top:20px;transform:translateX(-50%) rotate(45deg)}
   body.nav-open .nav-toggle-line-2{opacity:0}
   body.nav-open .nav-toggle-line-3{top:20px;transform:translateX(-50%) rotate(-45deg)}
+  .contact-menu-wrapper{width:100%;justify-content:flex-start;position:relative;z-index:12}
+  .contact-menu-wrapper.is-open .contact-quick-menu{width:100% !important;max-width:100% !important;opacity:1 !important;visibility:visible !important;padding:12px !important;transform:translateY(0) scale(1) !important}
+  .contact-quick-menu{left:0;right:0;top:calc(100% + 10px);width:100%;max-width:100%;min-width:100%;opacity:0;visibility:hidden;overflow:hidden;transform:translateY(-8px) scale(.98)}
+  .contact-option{padding:12px 14px;border-radius:18px}
+  .contact-trigger.is-open{background:linear-gradient(135deg, rgba(96,165,250,0.2), rgba(15, 118, 110, 0.18));}
 
   /* Make hero CTAs full width on small screens */
   .hero-cta{flex-direction:column}

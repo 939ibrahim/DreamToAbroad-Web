@@ -394,10 +394,27 @@ window.addEventListener('scroll', ()=> {
 
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+
+const applyMobileNavState = (open) => {
+  if (!nav) return;
+  nav.classList.toggle('is-open', open);
+  nav.style.display = open ? 'flex' : 'none';
+  nav.style.maxHeight = open ? '1200px' : '0';
+  nav.style.opacity = open ? '1' : '0';
+  nav.style.pointerEvents = open ? 'auto' : 'none';
+  nav.style.transform = open ? 'translateY(0)' : 'translateY(-10px)';
+  nav.style.overflow = open ? 'visible' : 'hidden';
+  document.body.classList.toggle('nav-open', open);
+  navToggle && navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+};
+
 if(navToggle){
-  navToggle.addEventListener('click', function(){
-    const open = document.body.classList.toggle('nav-open');
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  navToggle.addEventListener('click', function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    const isOpen = document.body.classList.contains('nav-open');
+    applyMobileNavState(!isOpen);
   });
 }
 
@@ -408,8 +425,7 @@ navLinks.forEach((link) => {
     navLinks.forEach((item) => item.classList.remove('is-active'));
     link.classList.add('is-active');
     if (window.innerWidth <= 900) {
-      document.body.classList.remove('nav-open');
-      navToggle && navToggle.setAttribute('aria-expanded', 'false');
+      applyMobileNavState(false);
     }
   });
 });
@@ -417,27 +433,59 @@ navLinks.forEach((link) => {
 const contactTrigger = document.querySelector('.contact-trigger');
 const contactMenu = document.getElementById('contactQuickMenu');
 const contactWrapper = document.querySelector('.contact-menu-wrapper');
-const closeContactMenu = () => {
+const applyContactMenuState = (isOpen) => {
   if (!contactTrigger || !contactMenu || !contactWrapper) return;
-  contactTrigger.classList.remove('is-open');
-  contactMenu.classList.remove('is-open');
-  contactWrapper.classList.remove('is-open');
-  contactTrigger.setAttribute('aria-expanded', 'false');
+  const isMobile = window.innerWidth <= 900;
+  const width = isMobile ? '100%' : '290px';
+  const maxWidth = isMobile ? '100%' : '290px';
+  const padding = isMobile ? '12px' : '14px';
+  const transform = isOpen ? 'translateY(0) scale(1)' : 'translateY(-8px) scale(.98)';
+
+  contactWrapper.classList.toggle('is-open', isOpen);
+  contactTrigger.classList.toggle('is-open', isOpen);
+  contactMenu.classList.toggle('is-open', isOpen);
+  contactTrigger.setAttribute('aria-expanded', String(isOpen));
+
+  contactMenu.style.display = isOpen ? 'flex' : 'none';
+  contactMenu.style.width = isOpen ? width : '0';
+  contactMenu.style.maxWidth = isOpen ? maxWidth : '0';
+  contactMenu.style.opacity = isOpen ? '1' : '0';
+  contactMenu.style.visibility = isOpen ? 'visible' : 'hidden';
+  contactMenu.style.padding = isOpen ? padding : '0';
+  contactMenu.style.transform = transform;
+};
+
+const closeContactMenu = () => {
+  applyContactMenuState(false);
 };
 
 if (contactTrigger && contactMenu && contactWrapper) {
   contactTrigger.addEventListener('click', (event) => {
+    event.preventDefault();
     event.stopPropagation();
-    const isOpen = contactWrapper.classList.toggle('is-open');
-    contactTrigger.classList.toggle('is-open', isOpen);
-    contactMenu.classList.toggle('is-open', isOpen);
-    contactTrigger.setAttribute('aria-expanded', String(isOpen));
+    const isOpen = !contactWrapper.classList.contains('is-open');
+
+    if (window.innerWidth <= 900) {
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle && navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    applyContactMenuState(isOpen);
   });
 
   document.addEventListener('click', (event) => {
     const target = event.target;
-    if (!target || (!contactTrigger.contains(target) && !contactMenu.contains(target) && !contactWrapper.contains(target))) {
+    if (!target) return;
+
+    const clickedInsideContact = contactWrapper.contains(target);
+    const clickedInsideNav = nav && nav.contains(target);
+    const clickedInsideToggle = navToggle && navToggle.contains(target);
+
+    if (!clickedInsideContact && !clickedInsideNav && !clickedInsideToggle) {
       closeContactMenu();
+      if (window.innerWidth <= 900) {
+        applyMobileNavState(false);
+      }
     }
   });
 }
